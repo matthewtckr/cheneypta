@@ -22,7 +22,8 @@ title: Home
     <div class="resource-list" aria-label="{{ section }}">
       {% for resource in resources %}
         {% if resource.category == section %}
-          <a class="resource-card" href="{{ resource.url | relative_url }}">
+          {% assign resource_href = resource.external_url | default: resource.url %}
+          <a class="resource-card" href="{{ resource_href | relative_url }}">
             <strong data-lang="en">{{ resource.title }}</strong>
             <strong data-lang="es">{{ resource.title_es | default: resource.title }}</strong>
             {% if resource.description %}<small data-lang="en">{{ resource.description }}</small>{% endif %}
