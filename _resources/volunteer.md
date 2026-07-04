@@ -1,7 +1,10 @@
 ---
 title: Volunteer
+title_es: Voluntariado
 description: Register through OCPS ADDitions before volunteering.
+description_es: Regístrese mediante OCPS ADDitions antes de ser voluntario.
 category: PTA
+category_es: PTA
 order: 60
 external_url: https://foundationforocps.org/additionsvolunteers/
 last_updated: 2026-07-04

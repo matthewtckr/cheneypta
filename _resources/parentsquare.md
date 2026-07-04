@@ -1,7 +1,10 @@
 ---
 title: ParentSquare
+title_es: ParentSquare
 description: School and classroom communication for families.
+description_es: Comunicación de la escuela y del salón para las familias.
 category: Essential Links
+category_es: Enlaces esenciales
 order: 20
 external_url: https://www.ocps.net/parentsquare
 last_updated: 2026-07-04

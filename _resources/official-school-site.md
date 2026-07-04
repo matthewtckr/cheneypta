@@ -1,7 +1,10 @@
 ---
 title: Official Cheney Elementary Website
+title_es: Sitio oficial de Cheney Elementary
 description: Current school information, calendars, and official announcements.
+description_es: Información escolar actual, calendarios y anuncios oficiales.
 category: Essential Links
+category_es: Enlaces esenciales
 order: 10
 external_url: https://cheneyes.ocps.net/
 last_updated: 2026-07-04
