@@ -1,9 +1,8 @@
 ---
 title: Volunteer
 description: Register through OCPS ADDitions before volunteering.
-icon: 🙋
 category: PTA
-order: 40
+order: 60
 external_url: https://foundationforocps.org/additionsvolunteers/
 last_updated: 2026-07-04
 content_en: |
