@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<article class="resource-page">
+  <p class="back-link"><a href="{{ '/' | relative_url }}">← Back to resources</a></p>
+
+  <header class="resource-header">
+    <span class="resource-icon large" aria-hidden="true">{{ page.icon }}</span>
+    <div>
+      <p class="eyebrow">{{ page.category }}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+    </div>
+  </header>
+
+  {% if page.external_url %}
+    <p><a class="primary-button" href="{{ page.external_url }}">Open resource</a></p>
+  {% endif %}
+
+  <div class="translation-grid">
+    <section class="translation-card">
+      <h2>English</h2>
+      <div class="content-block">
+        {{ page.content_en | markdownify }}
+      </div>
+    </section>
+
+    {% if page.content_es %}
+      <section class="translation-card" lang="es">
+        <h2>Español</h2>
+        <div class="content-block">
+          {{ page.content_es | markdownify }}
+        </div>
+      </section>
+    {% endif %}
+  </div>
+
+  {% if page.last_updated %}
+    <p class="last-updated">Last updated: {{ page.last_updated | date: "%B %-d, %Y" }}</p>
+  {% endif %}
+</article>
