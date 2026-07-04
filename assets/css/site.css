@@ -63,6 +63,20 @@ body::before {
   gap: 12px;
 }
 
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.site-logo {
+  width: 56px;
+  height: auto;
+  flex: 0 0 auto;
+}
+
 .site-title {
   font-weight: 800;
   color: var(--accent);
@@ -282,4 +296,14 @@ h2 {
   margin-top: 40px;
   border-top: 1px solid var(--border);
   font-size: 0.9rem;
+}
+
+@media (max-width: 520px) {
+  .site-header {
+    align-items: flex-start;
+  }
+
+  .site-logo {
+    width: 48px;
+  }
 }
