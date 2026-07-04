@@ -1,21 +1,21 @@
 ---
 title: Volunteer
-description: Help with events, teacher support, and PTA activities.
+description: Register through OCPS ADDitions before volunteering.
 icon: 🙋
 category: PTA
 order: 40
-external_url: "#"
+external_url: https://foundationforocps.org/additionsvolunteers/
 last_updated: 2026-07-04
 content_en: |
   Volunteers help make PTA events and school support possible.
 
-  Replace the button link on this page with the official volunteer form or signup link when available.
+  OCPS requires volunteers to register through the ADDitions volunteer process and complete the required safety training before volunteering at school.
 
-  Opportunities may include events, teacher appreciation, fundraisers, classroom support, and family nights.
+  Use the button above to start the OCPS volunteer registration process.
 content_es: |
   Los voluntarios ayudan a hacer posibles los eventos del PTA y el apoyo a la escuela.
 
-  Reemplace el enlace del botón en esta página con el formulario oficial de voluntariado o enlace de inscripción cuando esté disponible.
+  OCPS requiere que los voluntarios se registren mediante el proceso ADDitions y completen la capacitación de seguridad requerida antes de ser voluntarios en la escuela.
 
-  Las oportunidades pueden incluir eventos, reconocimiento a los maestros, recaudaciones de fondos, apoyo en el salón y noches familiares.
+  Use el botón de arriba para comenzar el proceso de registro de voluntarios de OCPS.
 ---
