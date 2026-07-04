@@ -18,7 +18,6 @@ layout: default
   {% endif %}
 
   <section class="translation-card" data-lang="en">
-    <h2>English</h2>
     <div class="content-block">
       {{ page.content_en | markdownify }}
     </div>
@@ -26,7 +25,6 @@ layout: default
 
   {% if page.content_es %}
     <section class="translation-card" lang="es" data-lang="es">
-      <h2>Español</h2>
       <div class="content-block">
         {{ page.content_es | markdownify }}
       </div>
