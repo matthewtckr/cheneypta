@@ -1,7 +1,10 @@
 ---
 title: OCPS ClassLink / LaunchPad
+title_es: OCPS ClassLink / LaunchPad
 description: Student access to OCPS apps and learning tools.
+description_es: Acceso estudiantil a aplicaciones de OCPS y herramientas de aprendizaje.
 category: Essential Links
+category_es: Enlaces esenciales
 order: 30
 external_url: https://launchpad.classlink.com/ocps
 last_updated: 2026-07-04
