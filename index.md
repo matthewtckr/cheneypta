@@ -5,23 +5,27 @@ title: Home
 
 <section class="hero">
   <p class="eyebrow">Cheney Elementary PTA</p>
-  <h1>Family Resource Hub</h1>
-  <p>Quick links, school resources, and PTA information for Cheney Elementary families.</p>
+  <h1 data-lang="en">Parent Resources</h1>
+  <h1 data-lang="es">Recursos para familias</h1>
+  <p data-lang="en">Quick links for Cheney Elementary families and new parents.</p>
+  <p data-lang="es">Enlaces rápidos para las familias de Cheney Elementary y familias nuevas.</p>
 </section>
 
-<section class="language-note">
-  <strong>Español:</strong> Cada recurso puede incluir una traducción al español cuando esté disponible.
-</section>
+{% assign resources = site.resources | sort: "order" %}
 
-<section class="resource-list" aria-label="Parent resources">
-  {% assign resources = site.resources | sort: "order" %}
-  {% for resource in resources %}
-    <a class="resource-card" href="{{ resource.url | relative_url }}">
-      <span class="resource-icon" aria-hidden="true">{{ resource.icon }}</span>
-      <span>
-        <strong>{{ resource.title }}</strong>
-        {% if resource.description %}<small>{{ resource.description }}</small>{% endif %}
-      </span>
-    </a>
-  {% endfor %}
-</section>
+{% assign sections = "Essential Links|PTA|School Resources" | split: "|" %}
+{% for section in sections %}
+  <section class="resource-section">
+    <h2>{{ section }}</h2>
+    <div class="resource-list" aria-label="{{ section }}">
+      {% for resource in resources %}
+        {% if resource.category == section %}
+          <a class="resource-card" href="{{ resource.url | relative_url }}">
+            <strong>{{ resource.title }}</strong>
+            {% if resource.description %}<small>{{ resource.description }}</small>{% endif %}
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}
