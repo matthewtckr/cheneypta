@@ -22,8 +22,12 @@ title: Home
     <div class="resource-list" aria-label="{{ section }}">
       {% for resource in resources %}
         {% if resource.category == section %}
-          {% assign resource_href = resource.external_url | default: resource.url %}
-          <a class="resource-card" href="{{ resource_href | relative_url }}">
+          {% if resource.external_url %}
+            {% assign resource_href = resource.external_url %}
+          {% else %}
+            {% assign resource_href = resource.url | relative_url %}
+          {% endif %}
+          <a class="resource-card" href="{{ resource_href }}">
             <strong data-lang="en">{{ resource.title }}</strong>
             <strong data-lang="es">{{ resource.title_es | default: resource.title }}</strong>
             {% if resource.description %}<small data-lang="en">{{ resource.description }}</small>{% endif %}
