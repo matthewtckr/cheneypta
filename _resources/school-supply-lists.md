@@ -3,8 +3,8 @@ title: School Supply Lists
 title_es: Listas de útiles escolares
 description: Supply list images for Pre-K through 5th Grade.
 description_es: Imágenes de las listas de útiles escolares de Pre-K a 5.º grado.
-category: School Resources
-category_es: Recursos escolares
+category: Parent Resources
+category_es: Recursos para familias
 order: 100
 external_url: ""
 last_updated: 2026-07-04
