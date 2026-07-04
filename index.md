@@ -13,7 +13,7 @@ title: Home
 
 {% assign resources = site.resources | sort: "order" %}
 
-{% assign sections = "Essential Links|PTA|School Resources" | split: "|" %}
+{% assign sections = "Parent Resources|Essential Links|PTA" | split: "|" %}
 {% for section in sections %}
   <section class="resource-section">
     <h2>{{ section }}</h2>
