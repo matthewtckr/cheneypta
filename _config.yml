@@ -1,0 +1,24 @@
+title: Cheney Elementary PTA
+description: Quick resources for Cheney Elementary families and new parents.
+url: "https://cheneypta.org"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+collections:
+  resources:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "resources"
+    values:
+      layout: resource
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
