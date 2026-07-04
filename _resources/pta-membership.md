@@ -1,9 +1,8 @@
 ---
 title: Join the PTA
 description: Memberships are available through the Cheney Store.
-icon: 🤝
 category: PTA
-order: 30
+order: 40
 external_url: https://cheneypta.givebacks.com/shop?category=16376
 last_updated: 2026-07-04
 content_en: |
