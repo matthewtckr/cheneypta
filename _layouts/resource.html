@@ -6,9 +6,11 @@ layout: default
   <p class="back-link"><a href="{{ '/' | relative_url }}"><span data-lang="en">Back to parent resources</span><span data-lang="es">Volver a recursos para familias</span></a></p>
 
   <header class="resource-header">
-    <p class="eyebrow">{{ page.category }}</p>
-    <h1>{{ page.title }}</h1>
-    {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+    <p class="eyebrow"><span data-lang="en">{{ page.category }}</span><span data-lang="es">{{ page.category_es | default: page.category }}</span></p>
+    <h1 data-lang="en">{{ page.title }}</h1>
+    <h1 data-lang="es">{{ page.title_es | default: page.title }}</h1>
+    {% if page.description %}<p data-lang="en">{{ page.description }}</p>{% endif %}
+    {% if page.description_es %}<p data-lang="es">{{ page.description_es }}</p>{% endif %}
   </header>
 
   {% if page.external_url %}
@@ -32,6 +34,6 @@ layout: default
   {% endif %}
 
   {% if page.last_updated %}
-    <p class="last-updated"><span data-lang="en">Last updated:</span><span data-lang="es">Última actualización:</span> {{ page.last_updated | date: "%B %-d, %Y" }}</p>
+    <p class="last-updated"><span data-lang="en">Last updated:</span><span data-lang="es">Última actualización:</span> {{ page.last_updated }}</p>
   {% endif %}
 </article>
