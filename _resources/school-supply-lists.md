@@ -1,8 +1,7 @@
 ---
 title: School Supply Lists
 description: Supply list images for Pre-K through 5th Grade.
-icon: ✏️
-category: School Supplies
+category: School Resources
 order: 100
 external_url: ""
 last_updated: 2026-07-04
