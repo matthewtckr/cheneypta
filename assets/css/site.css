@@ -298,12 +298,54 @@ h2 {
   font-size: 0.9rem;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 16px;
+  }
+
   .site-header {
-    align-items: flex-start;
+    display: block;
+    padding-bottom: 16px;
+  }
+
+  .site-brand {
+    display: flex;
+    margin-bottom: 14px;
   }
 
   .site-logo {
     width: 48px;
+  }
+
+  .site-header nav {
+    display: grid;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .site-header nav a {
+    display: block;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--grey);
+    border-radius: 10px;
+    background: var(--card);
+  }
+
+  .site-header nav a:hover,
+  .site-header nav a:focus-visible {
+    border-color: var(--accent);
+    border-left-color: var(--gold);
+    background: #ffffff;
+  }
+
+  .language-toggle {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .language-toggle button {
+    flex: 1;
   }
 }
