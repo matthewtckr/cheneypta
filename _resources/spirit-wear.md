@@ -1,6 +1,8 @@
 ---
 title: Spirit Wear Store
+title_es: Tienda de ropa escolar
 description: Shop Cheney shirts, polos, house shirts, and PTA items.
+description_es: Compre camisetas, polos, camisetas de las casas y artículos del PTA de Cheney.
 category: Parent Resources
 category_es: Recursos para familias
 order: 110
