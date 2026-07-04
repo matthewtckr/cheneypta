@@ -1,8 +1,9 @@
 ---
 title: Spirit Wear Store
 description: Shop Cheney shirts, polos, house shirts, and PTA items.
-category: PTA
-order: 50
+category: Parent Resources
+category_es: Recursos para familias
+order: 110
 external_url: https://cheneypta.givebacks.com/shop
 last_updated: 2026-07-04
 content_en: |
