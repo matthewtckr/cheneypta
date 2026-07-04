@@ -1,21 +1,26 @@
 ---
 title: ParentSquare
 description: School and classroom communication for families.
-icon: 💬
-category: Parent Resources
-order: 10
+category: Essential Links
+order: 20
 external_url: https://www.ocps.net/parentsquare
 last_updated: 2026-07-04
 content_en: |
-  ParentSquare is used by OCPS schools for family communication.
+  ParentSquare is the primary school communication tool for families.
 
-  Use ParentSquare to receive school announcements, classroom updates, reminders, and messages from staff.
+  Use ParentSquare for school announcements, classroom updates, reminders, and messages from staff.
 
-  If you are not receiving messages, check that your contact information is current with the school.
+  Download the app:
+
+  - [iPhone app](https://apps.apple.com/us/app/parentsquare/id908126679)
+  - [Android app](https://play.google.com/store/apps/details?id=com.parentsquare.psapp&hl=en_US)
 content_es: |
-  ParentSquare es utilizado por las escuelas de OCPS para la comunicación con las familias.
+  ParentSquare es la herramienta principal de comunicación escolar para las familias.
 
-  Use ParentSquare para recibir anuncios de la escuela, actualizaciones del salón, recordatorios y mensajes del personal.
+  Use ParentSquare para anuncios de la escuela, actualizaciones del salón, recordatorios y mensajes del personal.
 
-  Si no está recibiendo mensajes, verifique que su información de contacto esté actualizada con la escuela.
+  Descargue la aplicación:
+
+  - [Aplicación para iPhone](https://apps.apple.com/us/app/parentsquare/id908126679)
+  - [Aplicación para Android](https://play.google.com/store/apps/details?id=com.parentsquare.psapp&hl=en_US)
 ---
