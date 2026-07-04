@@ -10,16 +10,22 @@
 <body>
   <div class="page-shell">
     <header class="site-header">
-      <a class="site-title" href="{{ '/' | relative_url }}">Cheney PTA</a>
+      <a class="site-title" href="{{ '/' | relative_url }}">Cheney Elementary PTA</a>
       <nav aria-label="Primary navigation">
-        <a href="{{ '/' | relative_url }}">Resources</a>
+        <a href="{{ '/' | relative_url }}">Parent Resources</a>
         <a href="https://cheneyes.ocps.net/">Official School Site</a>
         <a href="https://www.ocps.net/parentsquare">ParentSquare</a>
       </nav>
     </header>
 
+    <div class="language-toggle" aria-label="Language selection">
+      <button type="button" data-set-lang="en">English</button>
+      <button type="button" data-set-lang="es">Español</button>
+    </div>
+
     <aside class="official-info-note">
-      <strong>Need the latest school information?</strong> Please use the <a href="https://cheneyes.ocps.net/">official Cheney Elementary website</a> and <a href="https://www.ocps.net/parentsquare">ParentSquare</a> for the most up-to-date announcements, schedules, and school communication.
+      <div data-lang="en"><strong>Need the latest school information?</strong> Please use the <a href="https://cheneyes.ocps.net/">official Cheney Elementary website</a> and <a href="https://www.ocps.net/parentsquare">ParentSquare</a> for current announcements, schedules, and school communication.</div>
+      <div data-lang="es"><strong>¿Necesita la información escolar más reciente?</strong> Use el <a href="https://cheneyes.ocps.net/">sitio web oficial de Cheney Elementary</a> y <a href="https://www.ocps.net/parentsquare">ParentSquare</a> para anuncios, horarios y comunicación escolar actualizados.</div>
     </aside>
 
     <main>
@@ -27,8 +33,11 @@
     </main>
 
     <footer class="site-footer">
-      <p>Cheney Elementary PTA resource hub. For official and time-sensitive school information, please check the official school website and ParentSquare.</p>
+      <p data-lang="en">Cheney Elementary PTA quick resource site. For official and time-sensitive school information, please check the official school website and ParentSquare.</p>
+      <p data-lang="es">Sitio de recursos rápidos de Cheney Elementary PTA. Para información oficial o urgente de la escuela, consulte el sitio web oficial de la escuela y ParentSquare.</p>
     </footer>
   </div>
+
+  <script src="{{ '/assets/js/language.js' | relative_url }}"></script>
 </body>
 </html>
