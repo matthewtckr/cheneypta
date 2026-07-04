@@ -5,7 +5,7 @@ title: Home
 
 {% assign resources = site.resources | sort: "order" %}
 
-{% assign sections = "Parent Resources|Essential Links|PTA" | split: "|" %}
+{% assign sections = "Parent Resources|PTA" | split: "|" %}
 {% for section in sections %}
   <section class="resource-section">
     <h2>
@@ -13,7 +13,6 @@ title: Home
       <span data-lang="es">
         {% case section %}
           {% when "Parent Resources" %}Recursos para familias
-          {% when "Essential Links" %}Enlaces esenciales
           {% when "PTA" %}PTA
           {% else %}{{ section }}
         {% endcase %}

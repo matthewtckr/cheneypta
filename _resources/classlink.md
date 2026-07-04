@@ -1,21 +1,21 @@
 ---
 title: OCPS ClassLink / LaunchPad
 title_es: OCPS ClassLink / LaunchPad
-description: Student access to OCPS apps and learning tools.
-description_es: Acceso estudiantil a aplicaciones de OCPS y herramientas de aprendizaje.
-category: Essential Links
-category_es: Enlaces esenciales
-order: 30
+description: Access OCPS apps and learning tools for students and families.
+description_es: Acceso a aplicaciones de OCPS y herramientas de aprendizaje para estudiantes y familias.
+category: Parent Resources
+category_es: Recursos para familias
+order: 35
 external_url: https://launchpad.classlink.com/ocps
 last_updated: 2026-07-04
 content_en: |
-  OCPS LaunchPad, powered by ClassLink, gives students access to district apps and learning tools.
+  OCPS LaunchPad, powered by ClassLink, gives students and families access to district apps and learning tools.
 
   Students can sign in using their OCPS credentials.
 
   Families may also hear this called LaunchPad or ClassLink.
 content_es: |
-  OCPS LaunchPad, con tecnología de ClassLink, les da a los estudiantes acceso a aplicaciones del distrito y herramientas de aprendizaje.
+  OCPS LaunchPad, con tecnología de ClassLink, les da a estudiantes y familias acceso a aplicaciones del distrito y herramientas de aprendizaje.
 
   Los estudiantes pueden iniciar sesión con sus credenciales de OCPS.
 
