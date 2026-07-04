@@ -3,14 +3,6 @@ layout: default
 title: Home
 ---
 
-<section class="hero">
-  <p class="eyebrow">Cheney Elementary PTA</p>
-  <h1 data-lang="en">Parent Resources</h1>
-  <h1 data-lang="es">Recursos para familias</h1>
-  <p data-lang="en">Quick links for Cheney Elementary families and new parents.</p>
-  <p data-lang="es">Enlaces rápidos para las familias de Cheney Elementary y familias nuevas.</p>
-</section>
-
 {% assign resources = site.resources | sort: "order" %}
 
 {% assign sections = "Parent Resources|Essential Links|PTA" | split: "|" %}
