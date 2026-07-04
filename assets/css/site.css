@@ -3,9 +3,11 @@
   --card: #ffffff;
   --text: #172033;
   --muted: #5d6678;
-  --accent: #1455d9;
-  --accent-dark: #0f3f9f;
-  --border: #dce3ef;
+  --accent: #1A4381;
+  --accent-dark: #12305c;
+  --gold: #ECD578;
+  --grey: #ABA59B;
+  --border: #d9dde4;
   --soft: #eef4ff;
   --shadow: 0 8px 24px rgba(24, 32, 51, 0.08);
 }
@@ -26,6 +28,14 @@ a {
   color: var(--accent);
 }
 
+body::before {
+  content: "";
+  display: block;
+  height: 10px;
+  background: var(--accent);
+  border-bottom: 4px solid var(--gold);
+}
+
 .page-shell {
   width: min(100%, 820px);
   margin: 0 auto;
@@ -43,6 +53,8 @@ a {
 
 .site-header {
   flex-wrap: wrap;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
 }
 
 .site-header nav {
@@ -51,9 +63,23 @@ a {
   gap: 12px;
 }
 
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.site-logo {
+  width: 56px;
+  height: auto;
+  flex: 0 0 auto;
+}
+
 .site-title {
   font-weight: 800;
-  color: var(--text);
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -61,6 +87,11 @@ a {
   color: var(--muted);
   font-weight: 650;
   text-decoration: none;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus-visible {
+  color: var(--accent);
 }
 
 .language-toggle {
@@ -97,9 +128,10 @@ body[data-current-lang="es"] [data-lang="en"] {
 .official-info-note {
   margin: 8px 0 24px;
   padding: 14px 16px;
-  border: 1px solid #b8cdfa;
+  border: 1px solid #d6c575;
+  border-left: 5px solid var(--gold);
   border-radius: 14px;
-  background: var(--soft);
+  background: #fff9df;
   color: var(--text);
 }
 
@@ -132,6 +164,20 @@ h2 {
   font-size: 1.1rem;
 }
 
+.resource-section h2 {
+  color: var(--accent);
+}
+
+.resource-section h2::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  margin-top: 6px;
+  border-radius: 999px;
+  background: var(--gold);
+}
+
 .hero h1,
 .resource-header h1 {
   margin-bottom: 10px;
@@ -159,6 +205,7 @@ h2 {
   display: block;
   padding: 18px;
   border: 1px solid var(--border);
+  border-left: 5px solid var(--grey);
   border-radius: 16px;
   background: var(--card);
   box-shadow: 0 3px 12px rgba(24, 32, 51, 0.04);
@@ -169,6 +216,7 @@ h2 {
 .resource-card:hover,
 .resource-card:focus-visible {
   border-color: var(--accent);
+  border-left-color: var(--gold);
   transform: translateY(-1px);
 }
 
@@ -193,6 +241,7 @@ h2 {
   margin-bottom: 20px;
   padding: 24px;
   border: 1px solid var(--border);
+  border-top: 6px solid var(--accent);
   border-radius: 20px;
   background: var(--card);
   box-shadow: var(--shadow);
@@ -247,4 +296,14 @@ h2 {
   margin-top: 40px;
   border-top: 1px solid var(--border);
   font-size: 0.9rem;
+}
+
+@media (max-width: 520px) {
+  .site-header {
+    align-items: flex-start;
+  }
+
+  .site-logo {
+    width: 48px;
+  }
 }
