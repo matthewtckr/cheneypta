@@ -1,9 +1,8 @@
 ---
 title: OCPS ClassLink / LaunchPad
 description: Student access to OCPS apps and learning tools.
-icon: 🚀
-category: Parent Resources
-order: 20
+category: Essential Links
+order: 30
 external_url: https://launchpad.classlink.com/ocps
 last_updated: 2026-07-04
 content_en: |
