@@ -1,7 +1,10 @@
 ---
 title: Join the PTA
+title_es: Únase al PTA
 description: Memberships are available through the Cheney Store.
+description_es: Las membresías están disponibles en la tienda de Cheney.
 category: PTA
+category_es: PTA
 order: 40
 external_url: https://cheneypta.givebacks.com/shop?category=16376
 last_updated: 2026-07-04
