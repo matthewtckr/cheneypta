@@ -1,5 +1,5 @@
 title: Cheney Elementary PTA
-description: Parent resources, school links, and PTA information for Cheney Elementary families.
+description: Quick resources for Cheney Elementary families and new parents.
 url: "https://cheneypta.org"
 baseurl: ""
 
@@ -9,7 +9,7 @@ permalink: pretty
 collections:
   resources:
     output: true
-    permalink: /resources/:name/
+    permalink: /:name/
 
 defaults:
   - scope:
