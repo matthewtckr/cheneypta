@@ -40,6 +40,16 @@ a {
   padding: 12px 0;
 }
 
+.site-header {
+  flex-wrap: wrap;
+}
+
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .site-title {
   font-weight: 800;
   color: var(--text);
@@ -50,6 +60,15 @@ a {
   color: var(--muted);
   font-weight: 650;
   text-decoration: none;
+}
+
+.official-info-note {
+  margin: 12px 0 20px;
+  padding: 14px 16px;
+  border: 1px solid #b8cdfa;
+  border-radius: 16px;
+  background: #eef4ff;
+  color: var(--text);
 }
 
 .hero {
