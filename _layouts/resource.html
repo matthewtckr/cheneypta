@@ -13,8 +13,9 @@ layout: default
     {% if page.description_es %}<p data-lang="es">{{ page.description_es }}</p>{% endif %}
   </header>
 
-  {% if page.external_url %}
-    <p><a class="primary-button" href="{{ page.external_url }}"><span data-lang="en">Open resource</span><span data-lang="es">Abrir recurso</span></a></p>
+  {% assign external_url = page.external_url | strip %}
+  {% if external_url != "" %}
+    <p><a class="primary-button" href="{{ external_url }}"><span data-lang="en">Open resource</span><span data-lang="es">Abrir recurso</span></a></p>
   {% endif %}
 
   <section class="translation-card" data-lang="en">

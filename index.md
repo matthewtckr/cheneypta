@@ -21,8 +21,9 @@ title: Home
     <div class="resource-list" aria-label="{{ section }}">
       {% for resource in resources %}
         {% if resource.category == section %}
-          {% if resource.external_url %}
-            {% assign resource_href = resource.external_url %}
+          {% assign external_url = resource.external_url | strip %}
+          {% if external_url != "" %}
+            {% assign resource_href = external_url %}
           {% else %}
             {% assign resource_href = resource.url | relative_url %}
           {% endif %}
