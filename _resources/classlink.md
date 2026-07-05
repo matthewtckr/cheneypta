@@ -5,7 +5,7 @@ description: Access OCPS apps and learning tools for students and families.
 description_es: Acceso a aplicaciones de OCPS y herramientas de aprendizaje para estudiantes y familias.
 category: Parent Resources
 category_es: Recursos para familias
-order: 35
+order: 999
 external_url: https://launchpad.classlink.com/ocps
 last_updated: 2026-07-04
 content_en: |
