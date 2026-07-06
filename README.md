@@ -87,7 +87,7 @@ After a successful GitHub Pages deployment, the workflow purges the Cloudflare c
 - GitHub Actions secret: `CLOUDFLARE_PURGE_TOKEN`
 - GitHub Actions variable: `CLOUDFLARE_ZONE_ID`
 
-The purge step currently uses Cloudflare's `purge_everything` option for the zone.
+The purge step currently purges cached content by hostname for `cheneypta.org`.
 
 ## Custom domain
 
