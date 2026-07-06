@@ -78,6 +78,17 @@ Resources are published at simple top-level URLs when they do not link directly 
 
 Resources with `external_url` set may still have generated pages, but the homepage card will send visitors directly to the external URL.
 
+## Deployment
+
+The `.github/workflows/pages.yml` workflow builds and deploys the site to GitHub Pages when relevant site files change on `main` or when the workflow is started manually.
+
+After a successful GitHub Pages deployment, the workflow purges the Cloudflare cache for the configured zone using these repository settings:
+
+- GitHub Actions secret: `CLOUDFLARE_PURGE_TOKEN`
+- GitHub Actions variable: `CLOUDFLARE_ZONE_ID`
+
+The purge step currently uses Cloudflare's `purge_everything` option for the zone.
+
 ## Custom domain
 
 The `CNAME` file points GitHub Pages to:
@@ -90,4 +101,4 @@ Configure the repository Pages settings and DNS records in GitHub and your DNS p
 
 ## Maintenance notes
 
-When making site changes, review this README in the same pull request and update it whenever the site structure, resource fields, category names, URL behavior, layout behavior, or language behavior changes.
+When making site changes, review this README in the same pull request and update it whenever the site structure, resource fields, category names, URL behavior, layout behavior, language behavior, or deployment behavior changes.
