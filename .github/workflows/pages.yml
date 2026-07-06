@@ -69,6 +69,6 @@ jobs:
             --url "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE_ID}/purge_cache" \
             --header "Authorization: Bearer ${CLOUDFLARE_PURGE_TOKEN}" \
             --header "Content-Type: application/json" \
-            --data '{"purge_everything":true}')
+            --data '{"hosts":["cheneypta.org"]}')
 
           echo "${response}" | jq --exit-status '.success == true' > /dev/null
