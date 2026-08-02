@@ -13,9 +13,11 @@ content_en: |
 
   - Pre-K and Kindergarten: 3:00–4:30 PM
   - 1st–5th Grades: 4:30–6:00 PM
+  - Free backpacks and supplies will be available in Room 126.
 content_es: |
   Acompáñenos en Cheney Elementary para el evento Conoce a tu maestro el 6 de agosto de 2026.
 
   - Pre-K y Kindergarten: 3:00–4:30 p. m.
   - 1.º a 5.º grado: 4:30–6:00 p. m.
+  - Mochilas y suministros gratuitos estarán disponibles en el salón 126.
 ---
