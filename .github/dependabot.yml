@@ -3,5 +3,12 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
     open-pull-requests-limit: 5
+  - package-ecosystem: terraform
+    directory: /iac
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    allow:
+      - dependency-type: direct
