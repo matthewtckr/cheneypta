@@ -1,8 +1,8 @@
 ---
 title: School Supply Lists
 title_es: Listas de útiles escolares
-description: Supply list images for Pre-K through 5th Grade.
-description_es: Imágenes de las listas de útiles escolares de Pre-K a 5.º grado.
+description: Supply list images for Pre-K through fifth grade.
+description_es: Imágenes de las listas de útiles escolares de Pre-K a quinto grado.
 category: Parent Resources
 category_es: Recursos para familias
 order: 100
@@ -13,19 +13,19 @@ content_en: |
 
   - [Pre-K](/assets/supply-lists/2026_pre_k.jpg)
   - [Kindergarten](/assets/supply-lists/2026_kindergarten.jpg)
-  - [1st Grade](/assets/supply-lists/2026_1st_grade.jpg)
-  - [2nd Grade](/assets/supply-lists/2026_2nd_grade.jpg)
-  - [3rd Grade](/assets/supply-lists/2026_3rd_grade.jpg)
-  - [4th Grade](/assets/supply-lists/2026_4th_grade.jpg)
-  - [5th Grade](/assets/supply-lists/2026_5th_grade.jpg)
+  - [First grade supply list](/assets/supply-lists/2026_1st_grade.jpg)
+  - [Second grade supply list](/assets/supply-lists/2026_2nd_grade.jpg)
+  - [Third grade supply list](/assets/supply-lists/2026_3rd_grade.jpg)
+  - [Fourth grade supply list](/assets/supply-lists/2026_4th_grade.jpg)
+  - [Fifth grade supply list](/assets/supply-lists/2026_5th_grade.jpg)
 content_es: |
   Use los enlaces a continuación para ver o descargar la lista de útiles escolares para cada grado.
 
   - [Pre-K](/assets/supply-lists/2026_pre_k.jpg)
   - [Kindergarten](/assets/supply-lists/2026_kindergarten.jpg)
-  - [1.er Grado](/assets/supply-lists/2026_1st_grade.jpg)
-  - [2.º Grado](/assets/supply-lists/2026_2nd_grade.jpg)
-  - [3.er Grado](/assets/supply-lists/2026_3rd_grade.jpg)
-  - [4.º Grado](/assets/supply-lists/2026_4th_grade.jpg)
-  - [5.º Grado](/assets/supply-lists/2026_5th_grade.jpg)
+  - [Primer grado](/assets/supply-lists/2026_1st_grade.jpg)
+  - [Segundo grado](/assets/supply-lists/2026_2nd_grade.jpg)
+  - [Tercer grado](/assets/supply-lists/2026_3rd_grade.jpg)
+  - [Cuarto grado](/assets/supply-lists/2026_4th_grade.jpg)
+  - [Quinto grado](/assets/supply-lists/2026_5th_grade.jpg)
 ---
