@@ -47,8 +47,11 @@ On generated resource pages, the `Open resource` button only appears when `exter
 
 The home page currently displays these sections:
 
+- Events
 - Parent Resources
 - PTA
+
+Homepage sections and their Spanish labels are defined in the `sections` list in the front matter at the top of `index.md`. A resource's `category` must match a section's English `name` to appear in that section.
 
 Set the `category` field to one of those names to place a resource in that section. Use `category_es` for the Spanish category label on resource pages.
 
