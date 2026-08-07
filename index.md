@@ -1,6 +1,13 @@
 ---
 layout: default
 title: Home
+sections:
+  - name: Events
+    name_es: Eventos
+  - name: Parent Resources
+    name_es: Recursos para familias
+  - name: PTA
+    name_es: PTA
 ---
 
 {% assign resources = site.resources | sort: "order" %}
@@ -12,22 +19,15 @@ title: Home
   <p data-lang="es">Encuentre recursos escolares útiles y maneras sencillas de apoyar a cada estudiante de Cheney Elementary.</p>
 </section>
 
-{% assign sections = "Parent Resources|PTA" | split: "|" %}
-{% for section in sections %}
+{% for section in page.sections %}
   <section class="resource-section">
     <h2>
-      <span data-lang="en">{{ section }}</span>
-      <span data-lang="es">
-        {% case section %}
-          {% when "Parent Resources" %}Recursos para familias
-          {% when "PTA" %}PTA
-          {% else %}{{ section }}
-        {% endcase %}
-      </span>
+      <span data-lang="en">{{ section.name }}</span>
+      <span data-lang="es">{{ section.name_es | default: section.name }}</span>
     </h2>
-    <div class="resource-list" aria-label="{{ section }}">
+    <div class="resource-list" aria-label="{{ section.name }}">
       {% for resource in resources %}
-        {% if resource.category == section %}
+        {% if resource.category == section.name %}
           {% assign external_url = resource.external_url | strip %}
           {% if external_url != "" %}
             {% assign resource_href = external_url %}
