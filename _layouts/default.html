@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 </head>
 <body>
+  <a class="skip-link" href="#main-content"><span data-lang="en">Skip to main content</span><span data-lang="es">Saltar al contenido principal</span></a>
   <div class="page-shell">
     <header class="site-header">
       <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Cheney Elementary PTA home">
-        <img class="site-logo" src="{{ '/assets/logo.png' | relative_url }}" width="184" height="192" alt="Cheney Elementary logo">
-        <span class="site-title">Cheney Elementary PTA</span>
+        <img class="site-logo" src="{{ '/assets/logo.png' | relative_url }}" width="184" height="192" alt="Cheney Elementary school logo">
+        <span class="site-title">Cheney Elementary PTA<sup>®</sup></span>
       </a>
       <nav aria-label="Primary navigation">
         <a href="https://cheneyes.ocps.net/"><span data-lang="en">Official School Site</span><span data-lang="es">Sitio oficial de la escuela</span></a>
@@ -30,11 +31,14 @@
       <div data-lang="es"><strong>¿Necesita la información escolar más reciente?</strong> Use <a href="https://www.ocps.net/parentsquare">ParentSquare</a> y el <a href="https://cheneyes.ocps.net/">sitio web oficial de Cheney Elementary</a> para anuncios, horarios y comunicación escolar actualizados.</div>
     </aside>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       {{ content }}
     </main>
 
-    <footer class="site-footer"></footer>
+    <footer class="site-footer">
+      <p><span data-lang="en">Cheney Elementary PTA<sup>®</sup> is a local Parent Teacher Association serving Cheney Elementary families.</span><span data-lang="es">Cheney Elementary PTA<sup>®</sup> es una asociación local de padres y maestros que sirve a las familias de Cheney Elementary.</span></p>
+      <p class="affiliation-links"><a href="https://www.floridapta.org/"><span data-lang="en">Visit Florida PTA<sup>®</sup></span><span data-lang="es">Visite Florida PTA<sup>®</sup></span></a><a href="https://www.pta.org/"><span data-lang="en">Visit National PTA<sup>®</sup></span><span data-lang="es">Visite National PTA<sup>®</sup></span></a></p>
+    </footer>
   </div>
 
   <script src="{{ '/assets/js/language.js' | relative_url }}"></script>

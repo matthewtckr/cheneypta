@@ -5,6 +5,13 @@ title: Home
 
 {% assign resources = site.resources | sort: "order" %}
 
+<section class="hero" aria-labelledby="welcome-heading">
+  <p class="eyebrow"><span data-lang="en">Families, educators and community</span><span data-lang="es">Familias, educadores y comunidad</span></p>
+  <h1 id="welcome-heading"><span data-lang="en">Welcome to Cheney Elementary PTA<sup>®</sup></span><span data-lang="es">Bienvenidos a Cheney Elementary PTA<sup>®</sup></span></h1>
+  <p data-lang="en">Find useful school resources and simple ways to support every Cheney Elementary student.</p>
+  <p data-lang="es">Encuentre recursos escolares útiles y maneras sencillas de apoyar a cada estudiante de Cheney Elementary.</p>
+</section>
+
 {% assign sections = "Parent Resources|PTA" | split: "|" %}
 {% for section in sections %}
   <section class="resource-section">
