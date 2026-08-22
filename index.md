@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+title_es: Inicio
 sections:
   - name: Events
     name_es: Eventos
