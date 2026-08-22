@@ -8,6 +8,8 @@ on:
       - _config.yml
       - index.md
       - 404.html
+      - sitemap.xml
+      - robots.txt
       - CNAME
       - _resources/**
       - _data/**
@@ -20,6 +22,8 @@ on:
       - _config.yml
       - index.md
       - 404.html
+      - sitemap.xml
+      - robots.txt
       - CNAME
       - _resources/**
       - _data/**

@@ -12,6 +12,7 @@ The site is intended to remain a minimal quick resource page for families and ne
 - Shared styling is in `assets/css/site.css`.
 - Language toggle behavior is in `assets/js/language.js`.
 - The site logo image is stored at `assets/logo.png` and is referenced by the default layout.
+- `sitemap.xml` lists the homepage and generated resource pages, and `robots.txt` advertises the sitemap to search engines.
 
 ## Adding or editing a resource
 
