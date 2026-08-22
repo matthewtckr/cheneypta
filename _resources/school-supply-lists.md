@@ -1,8 +1,8 @@
 ---
 title: School Supply Lists
 title_es: Listas de útiles escolares
-description: Embedded supply lists and accessible text transcripts for Pre-K through fifth grade.
-description_es: Listas de útiles escolares integradas y transcripciones de texto accesibles de Pre-K a quinto grado.
+description: Expandable accessible supply lists with original flyer links for Pre-K through fifth grade.
+description_es: Listas de útiles escolares accesibles y ampliables, con enlaces a los volantes originales, de Pre-K a quinto grado.
 category: Parent Resources
 category_es: Recursos para familias
 order: 100
