@@ -26,7 +26,7 @@ sections:
       <span data-lang="en">{{ section.name }}</span>
       <span data-lang="es">{{ section.name_es | default: section.name }}</span>
     </h2>
-    <ul class="resource-list" aria-label="{{ section.name }}">
+    <ul class="resource-list" aria-label="{{ section.name }}" data-aria-label-en="{{ section.name }}" data-aria-label-es="{{ section.name_es | default: section.name }}">
       {% for resource in resources %}
         {% if resource.category == section.name %}
           {% assign external_url = resource.external_url | strip %}

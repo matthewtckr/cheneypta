@@ -10,6 +10,19 @@ on:
       - 404.html
       - CNAME
       - _resources/**
+      - _data/**
+      - _layouts/**
+      - _includes/**
+      - assets/**
+      - .github/workflows/pages.yml
+  pull_request:
+    paths:
+      - _config.yml
+      - index.md
+      - 404.html
+      - CNAME
+      - _resources/**
+      - _data/**
       - _layouts/**
       - _includes/**
       - assets/**
@@ -27,7 +40,6 @@ concurrency:
 
 jobs:
   build:
-    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -41,6 +53,13 @@ jobs:
         with:
           source: ./
           destination: ./_site
+
+      - name: Validate HTML with the Nu Html Checker
+        run: |
+          docker run --rm \
+            --volume "${PWD}/_site:/site:ro" \
+            ghcr.io/validator/validator:latest \
+            vnu --skip-non-html /site
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0

@@ -35,6 +35,11 @@
       document.title = title.getAttribute("data-title-" + language);
     }
 
+    var description = document.querySelector("meta[name='description'][data-description-en][data-description-es]");
+    if (description) {
+      description.setAttribute("content", description.getAttribute("data-description-" + language));
+    }
+
     var labeledElements = document.querySelectorAll("[data-aria-label-en][data-aria-label-es]");
     labeledElements.forEach(function (element) {
       element.setAttribute("aria-label", element.getAttribute("data-aria-label-" + language));

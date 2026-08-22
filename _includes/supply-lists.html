@@ -1,7 +1,7 @@
 {% if include.language == "es" %}
-  <p>Seleccione un grado para ampliar su lista de útiles traducida. También puede abrir el volante original en inglés.</p>
+  <p>Seleccione un grado para ver la lista de útiles escolares. También puede abrir el volante original en inglés.</p>
 {% else %}
-  <p>Select a grade to expand its accessible supply list. A link to the original flyer is also available.</p>
+  <p>Select a grade to view its school supply list. You can also open the original flyer.</p>
 {% endif %}
 
 {% for supply_list in site.data.supply_lists %}
@@ -9,10 +9,9 @@
     <summary>{% if include.language == "es" %}{{ supply_list.grade_es }}{% else %}{{ supply_list.grade_en }}{% endif %}</summary>
     <div class="supply-list-content">
       <p><a href="{{ supply_list.image | relative_url }}">{% if include.language == "es" %}Abrir el volante original en inglés{% else %}Open the original flyer{% endif %}</a></p>
-      <div class="supply-list-transcript">
-        <h3>{% if include.language == "es" %}Transcripción de texto accesible{% else %}Accessible text transcript{% endif %}</h3>
+      <div class="supply-list-details">
+        <h2>{% if include.language == "es" %}{{ supply_list.source_title_es }}{% else %}{{ supply_list.source_title }}{% endif %}</h2>
         <div>
-          <p><strong>{% if include.language == "es" %}{{ supply_list.source_title_es }}{% else %}{{ supply_list.source_title }}{% endif %}</strong></p>
           {% if include.language == "es" %}
             {% assign intro = supply_list.intro_es %}
             {% assign closing = supply_list.closing_es %}
