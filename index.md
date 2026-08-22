@@ -25,7 +25,7 @@ sections:
       <span data-lang="en">{{ section.name }}</span>
       <span data-lang="es">{{ section.name_es | default: section.name }}</span>
     </h2>
-    <div class="resource-list" aria-label="{{ section.name }}">
+    <ul class="resource-list" aria-label="{{ section.name }}">
       {% for resource in resources %}
         {% if resource.category == section.name %}
           {% assign external_url = resource.external_url | strip %}
@@ -34,14 +34,16 @@ sections:
           {% else %}
             {% assign resource_href = resource.url | relative_url %}
           {% endif %}
-          <a class="resource-card" href="{{ resource_href }}">
-            <strong data-lang="en">{{ resource.title }}</strong>
-            <strong data-lang="es">{{ resource.title_es | default: resource.title }}</strong>
-            {% if resource.description %}<small data-lang="en">{{ resource.description }}</small>{% endif %}
-            {% if resource.description_es %}<small data-lang="es">{{ resource.description_es }}</small>{% endif %}
-          </a>
+          <li>
+            <a class="resource-card" href="{{ resource_href }}">
+              <strong data-lang="en">{{ resource.title }}</strong>
+              <strong data-lang="es">{{ resource.title_es | default: resource.title }}</strong>
+              {% if resource.description %}<small data-lang="en">{{ resource.description }}</small>{% endif %}
+              {% if resource.description_es %}<small data-lang="es">{{ resource.description_es }}</small>{% endif %}
+            </a>
+          </li>
         {% endif %}
       {% endfor %}
-    </div>
+    </ul>
   </section>
 {% endfor %}
