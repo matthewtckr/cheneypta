@@ -3,10 +3,14 @@
   grade_es: Pre-K
   image: /assets/supply-lists/2026_pre_k.jpg
   source_title: Cheney Elementary Pre-Kindergarten Wishlist 2026-2027
+  source_title_es: Lista de deseos de prekínder de Cheney Elementary 2026-2027
   intro:
     - "Your child will need the following items. Please label these items with your child's name."
+  intro_es:
+    - "Su hijo necesitará los siguientes artículos. Etiquete estos artículos con el nombre de su hijo."
   groups:
     - title: Required items
+      title_es: Artículos requeridos
       items:
         - Reusable water bottle
         - Plastic resting mat
@@ -14,10 +18,21 @@
         - Set of headphones (no earbuds)
         - "Complete change of clothes labeled with your child's name: shirt, shorts or pants, socks, and underwear. This will be kept at school to be used as needed."
         - Full-sized backpack (no wheels)
+      items_es:
+        - Botella de agua reutilizable
+        - Colchoneta de plástico para descansar
+        - Manta pequeña para la hora de descanso
+        - Audífonos de diadema (no auriculares de botón)
+        - "Un cambio completo de ropa etiquetado con el nombre de su hijo: camisa, pantalones cortos o largos, calcetines y ropa interior. Se guardará en la escuela para usarlo cuando sea necesario."
+        - Mochila de tamaño completo (sin ruedas)
     - title: Optional
+      title_es: Opcional
       items:
         - "Lunch box, if your child will bring lunch from home. The school does not have a microwave or refrigerator for lunches."
+      items_es:
+        - "Lonchera, si su hijo traerá almuerzo de casa. La escuela no tiene microondas ni refrigerador para los almuerzos."
     - title: Voluntary donations — please do not put names on these items
+      title_es: Donaciones voluntarias — no escriba nombres en estos artículos
       items:
         - Antibacterial hand soap
         - Hand sanitizer
@@ -37,17 +52,41 @@
         - Washable markers
         - Colored pencils
         - A box of healthy snacks to share with the class of 20 students
+      items_es:
+        - Jabón antibacterial para manos
+        - Desinfectante de manos
+        - Papel para copias
+        - Toallitas húmedas para bebés
+        - Pañuelos desechables
+        - Cuaderno de espiral
+        - Papel de construcción
+        - Plastilina Play-Doh
+        - Vasos de plástico — de cualquier tamaño y color
+        - Crayones — caja de 24
+        - Barras de pegamento
+        - Marcadores de borrado en seco
+        - Bolsas Ziploc — de cualquier tamaño
+        - Toallitas desinfectantes
+        - Pinturas de acuarela
+        - Marcadores lavables
+        - Lápices de colores
+        - Una caja de refrigerios saludables para compartir con la clase de 20 estudiantes
 
 - id: kindergarten
   grade_en: Kindergarten
   grade_es: Kindergarten
   image: /assets/supply-lists/2026_kindergarten.jpg
   source_title: Cheney Elementary Kindergarten Supply List
+  source_title_es: Lista de útiles de kindergarten de Cheney Elementary
   intro:
     - Supplies will be shared within the classroom.
     - "Please do not label items with your child's name unless noted."
+  intro_es:
+    - Los útiles se compartirán dentro del salón de clases.
+    - "No etiquete los artículos con el nombre de su hijo a menos que se indique lo contrario."
   groups:
     - title: Supply list
+      title_es: Lista de útiles
       items:
         - Full-size backpack without wheels (label with name)
         - Reusable water bottle (label with name)
@@ -63,14 +102,31 @@
         - 1 container of liquid hand soap
         - 1 bottle of hand sanitizer
         - "4 containers of Play-Doh — please do not get a dollar-store brand"
+      items_es:
+        - Mochila de tamaño completo sin ruedas (etiquetar con el nombre)
+        - Botella de agua reutilizable (etiquetar con el nombre)
+        - "Audífonos de diadema (etiquetar con el nombre). No se permiten auriculares de botón ni audífonos inalámbricos; deben tener un conector USB-C."
+        - 24 barras pequeñas de pegamento
+        - 2 resmas de papel para copias o impresora
+        - 2 cajas de crayones Crayola — 24 unidades
+        - "2 cajas de marcadores de colores clásicos — 8 unidades: 1 de punta fina y 1 de punta gruesa"
+        - 12 lápices amarillos número 2
+        - "2 cuadernos de composición para primaria. Son diferentes de los cuadernos de composición regulares."
+        - 2 paquetes de 4 marcadores EXPO de borrado en seco — se prefieren todos negros
+        - 1 caja de pañuelos desechables
+        - 1 recipiente de jabón líquido para manos
+        - 1 botella de desinfectante de manos
+        - "4 recipientes de plastilina Play-Doh — no compre una marca de tienda de dólar"
 
 - id: first-grade
   grade_en: First grade
   grade_es: Primer grado
   image: /assets/supply-lists/2026_1st_grade.jpg
   source_title: First Grade Supply List
+  source_title_es: Lista de útiles de primer grado
   groups:
     - title: Supply list
+      title_es: Lista de útiles
       items:
         - 2 pairs of headphones with USB-C — no wireless headphones or earbuds
         - Full-size backpack without wheels
@@ -88,10 +144,31 @@
         - 4 four-packs of thin black dry erase markers
         - "2 plastic folders with prongs: 1 red and 1 green"
         - "2 primary writing picture journals: half-page lined with drawing space on top"
+      items_es:
+        - 2 pares de audífonos de diadema con USB-C — no inalámbricos ni auriculares de botón
+        - Mochila de tamaño completo sin ruedas
+        - 2 borradores rosados grandes
+        - 1 par de tijeras
+        - 4 resmas de papel para copias
+        - Caja para lápices
+        - 2 cajas de pañuelos desechables
+        - 1 botella de jabón para manos
+        - 1 botella de desinfectante de manos
+        - 10 barras de pegamento
+        - 1 cuaderno de composición con renglones anchos
+        - 2 paquetes de lápices amarillos con punta
+        - 2 cajas de crayones Crayola — 24 unidades
+        - 4 paquetes de 4 marcadores negros delgados de borrado en seco
+        - "2 carpetas de plástico con sujetadores: 1 roja y 1 verde"
+        - "2 diarios de escritura primaria con dibujos: media página con renglones y espacio para dibujar en la parte superior"
     - title: Optional home practice
+      title_es: Práctica opcional en casa
       items:
         - Addition and subtraction flashcards
+      items_es:
+        - Tarjetas didácticas de suma y resta
     - title: Wish list
+      title_es: Lista de deseos
       items:
         - Gallon-size resealable bags
         - Colored copy paper
@@ -103,14 +180,27 @@
         - Play-Doh
         - Sandwich bags
         - Bandages without characters
+      items_es:
+        - Bolsas resellables de un galón
+        - Papel de colores para copias
+        - Cartulina blanca
+        - Marcadores o lápices de colores
+        - Notas adhesivas Post-it
+        - Tarjetas de índice
+        - Bolsas de un cuarto de galón
+        - Plastilina Play-Doh
+        - Bolsas para sándwiches
+        - Vendajes sin personajes
 
 - id: second-grade
   grade_en: Second grade
   grade_es: Segundo grado
   image: /assets/supply-lists/2026_2nd_grade.jpg
   source_title: Second Grade Supply List 2026-2027
+  source_title_es: Lista de útiles de segundo grado 2026-2027
   groups:
     - title: Supply list
+      title_es: Lista de útiles
       items:
         - 2 dozen pencils
         - Pencil sharpener with cover
@@ -123,14 +213,28 @@
         - 4 black dry erase markers
         - 2 boxes of tissues
         - Disinfecting wipes
+      items_es:
+        - 2 docenas de lápices
+        - Sacapuntas con cubierta
+        - 4 borradores rosados
+        - 3 audífonos de diadema — escriba el nombre del estudiante en ellos
+        - 3 resmas de papel para copias
+        - Estuche blando para lápices — no cajas
+        - 2 cajas de crayones — 24 unidades
+        - Resaltadores — 4 colores diferentes
+        - 4 marcadores negros de borrado en seco
+        - 2 cajas de pañuelos desechables
+        - Toallitas desinfectantes
 
 - id: third-grade
   grade_en: Third grade
   grade_es: Tercer grado
   image: /assets/supply-lists/2026_3rd_grade.jpg
   source_title: Back to School — Grade 3 Supply List
+  source_title_es: Regreso a clases — lista de útiles de tercer grado
   groups:
     - title: Supply list
+      title_es: Lista de útiles
       items:
         - 2 composition notebooks
         - 2 folders
@@ -152,16 +256,41 @@
         - Index cards
         - Astrobright printer paper
         - Tissues
+      items_es:
+        - 2 cuadernos de composición
+        - 2 carpetas
+        - Borradores
+        - 3 resmas de papel
+        - Lápices de colores
+        - Crayones
+        - Lápices con punta
+        - Tijeras
+        - Barras de pegamento
+        - Notas adhesivas
+        - Audífonos de diadema con cable
+        - Ratón de computadora con cable
+        - Desinfectante de manos
+        - Resaltadores
+        - Pizarra blanca de mano
+        - Marcadores EXPO y borradores
+        - Bolsas Ziploc de diferentes tamaños
+        - Tarjetas de índice
+        - Papel Astrobright para impresora
+        - Pañuelos desechables
 
 - id: fourth-grade
   grade_en: Fourth grade
   grade_es: Cuarto grado
   image: /assets/supply-lists/2026_4th_grade.jpg
   source_title: Cheney Elementary School Fourth Grade Supply List
+  source_title_es: Lista de útiles de cuarto grado de Cheney Elementary School
   intro:
     - "Headphones must last all year; parents are responsible for replacing them. They are needed for every subject, testing, and tutoring. Do not send them in a box or package. Write your child's name on them and send them in a large Ziploc bag."
+  intro_es:
+    - "Los audífonos deben durar todo el año; los padres son responsables de reemplazarlos. Se necesitan para todas las materias, exámenes y tutorías. No los envíe en una caja o paquete. Escriba el nombre de su hijo en ellos y envíelos en una bolsa Ziploc grande."
   groups:
     - title: Supply list
+      title_es: Lista de útiles
       items:
         - 1 pair of headphones — no Bluetooth or earbuds
         - 1 zipper pencil pouch
@@ -172,7 +301,18 @@
         - 2 to 4 packs of EXPO dry erase markers
         - 1 package of Elmer's glue sticks
         - 1 to 2 reams of white copy paper
+      items_es:
+        - 1 par de audífonos de diadema — no Bluetooth ni auriculares de botón
+        - 1 estuche con cierre para lápices
+        - 1 cuaderno de composición tipo mármol con renglones anchos para Lengua y Literatura en Inglés
+        - 1 cuaderno de espiral con renglones anchos para matemáticas
+        - "4 carpetas de plástico con dos bolsillos: 2 para Lengua y Literatura en Inglés, 1 para matemáticas y 1 para trabajos que se llevan a casa"
+        - "De 2 a 4 paquetes de lápices número 2, con 24 unidades y con punta. Solo lápices amarillos de madera."
+        - De 2 a 4 paquetes de marcadores EXPO de borrado en seco
+        - 1 paquete de barras de pegamento Elmer's
+        - De 1 a 2 resmas de papel blanco para copias
     - title: Classroom extras
+      title_es: Artículos adicionales para el salón
       items:
         - Boxes of tissues
         - Refill liquid soap
@@ -180,18 +320,31 @@
         - Colored pencils
         - Gallon- and quart-size Ziploc bags
         - Thin colored markers
+      items_es:
+        - Cajas de pañuelos desechables
+        - Repuesto de jabón líquido
+        - Toallitas desinfectantes
+        - Lápices de colores
+        - Bolsas Ziploc de un galón y de un cuarto de galón
+        - Marcadores delgados de colores
   closing:
     - Bring the items to Meet the Teacher in a labeled bag.
+  closing_es:
+    - Lleve los artículos a Conozca al Maestro en una bolsa etiquetada.
 
 - id: fifth-grade
   grade_en: Fifth grade
   grade_es: Quinto grado
   image: /assets/supply-lists/2026_5th_grade.jpg
   source_title: Cheney Elementary Fifth Grade Supply and Wish List
+  source_title_es: Lista de útiles y deseos de quinto grado de Cheney Elementary
   intro:
     - Please bring these items to Meet the Teacher or have them on the first day of school.
+  intro_es:
+    - Lleve estos artículos a Conozca al Maestro o téngalos el primer día de clases.
   groups:
     - title: Supply list
+      title_es: Lista de útiles
       items:
         - 2 pairs of computer headphones or earbuds
         - 2 composition notebooks for math
@@ -203,7 +356,19 @@
         - 2 packs of wide black dry erase markers
         - 1 soft pencil case
         - 1 dry erase board
+      items_es:
+        - 2 pares de audífonos o auriculares para computadora
+        - 2 cuadernos de composición para matemáticas
+        - 1 cuaderno de espiral de tapa dura con 5 divisores para Lengua y Literatura en Inglés
+        - 3 paquetes de lápices de madera con punta — no lápices mecánicos
+        - 5 carpetas con bolsillos y 3 sujetadores
+        - 1 paquete de resaltadores de colores
+        - 1 paquete de borradores
+        - 2 paquetes de marcadores negros anchos de borrado en seco
+        - 1 estuche blando para lápices
+        - 1 pizarra de borrado en seco
     - title: Donation wish list
+      title_es: Lista de donaciones deseadas
       items:
         - 2 reams of copy paper
         - 1 box of tissues
@@ -216,3 +381,15 @@
         - 1 box of bandages
         - 1 pack of dry erase markers
         - 1 pack of lined note cards
+      items_es:
+        - 2 resmas de papel para copias
+        - 1 caja de pañuelos desechables
+        - 2 paquetes de grapas
+        - 2 rollos de cinta adhesiva Scotch
+        - 1 botella de desinfectante de manos
+        - 2 recipientes de toallitas desinfectantes
+        - 1 botella de jabón para manos
+        - 1 caja de bolsas Ziploc
+        - 1 caja de vendajes
+        - 1 paquete de marcadores de borrado en seco
+        - 1 paquete de tarjetas con renglones
