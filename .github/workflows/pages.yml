@@ -65,6 +65,18 @@ jobs:
             ghcr.io/validator/validator:latest \
             vnu --skip-non-html /site
 
+      - name: Validate internal links
+        if: github.event_name == 'pull_request'
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          fail: true
+          args: >-
+            --offline
+            --no-progress
+            --root-dir "$(pwd)/_site"
+            --index-files index.html
+            './_site/**/*.html'
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:

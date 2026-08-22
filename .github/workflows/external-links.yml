@@ -1,0 +1,59 @@
+name: Check External Links
+
+on:
+  schedule:
+    - cron: "0 10 1 * *"
+  push:
+    branches:
+      - main
+    paths:
+      - _resources/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  external-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 2
+
+      - name: Check whether a resource page was added
+        id: page-change
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" != "push" ]]; then
+            echo "run=true" >> "${GITHUB_OUTPUT}"
+          elif git diff --diff-filter=A --name-only "${{ github.event.before }}" "${{ github.sha }}" -- '_resources/*.md' | grep --quiet .; then
+            echo "run=true" >> "${GITHUB_OUTPUT}"
+          else
+            echo "run=false" >> "${GITHUB_OUTPUT}"
+          fi
+
+      - name: Configure Pages
+        if: steps.page-change.outputs.run == 'true'
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      - name: Build with Jekyll
+        if: steps.page-change.outputs.run == 'true'
+        uses: actions/jekyll-build-pages@44a6e6beabd48582f863aeeb6cb2151cc1716697 # v1.0.13
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Check external links
+        if: steps.page-change.outputs.run == 'true'
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          fail: true
+          args: >-
+            --no-progress
+            --max-retries 3
+            --timeout 30
+            --root-dir "$(pwd)/_site"
+            --index-files index.html
+            './_site/**/*.html'
