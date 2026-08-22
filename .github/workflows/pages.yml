@@ -11,6 +11,7 @@ on:
       - sitemap.xml
       - robots.txt
       - CNAME
+      - .well-known/**
       - _resources/**
       - _data/**
       - _layouts/**
@@ -25,6 +26,7 @@ on:
       - sitemap.xml
       - robots.txt
       - CNAME
+      - .well-known/**
       - _resources/**
       - _data/**
       - _layouts/**
