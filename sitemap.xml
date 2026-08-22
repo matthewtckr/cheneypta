@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% assign home_page = site.pages | where: "url", "/" | first %}
+  <url>
+    <loc>{{ '/' | absolute_url | xml_escape }}</loc>
+{% if home_page.last_updated %}
+    <lastmod>{{ home_page.last_updated | date: "%Y-%m-%d" }}</lastmod>
+{% endif %}
+  </url>
+{% assign resources = site.resources | sort: "url" %}
+{% for resource in resources %}
+  <url>
+    <loc>{{ resource.url | absolute_url | xml_escape }}</loc>
+{% if resource.last_updated %}
+    <lastmod>{{ resource.last_updated | date: "%Y-%m-%d" }}</lastmod>
+{% endif %}
+  </url>
+{% endfor %}
+</urlset>

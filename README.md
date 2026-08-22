@@ -12,6 +12,7 @@ The site is intended to remain a minimal quick resource page for families and ne
 - Shared styling is in `assets/css/site.css`.
 - Language toggle behavior is in `assets/js/language.js`.
 - The site logo image is stored at `assets/logo.png` and is referenced by the default layout.
+- `sitemap.xml` lists the homepage and generated resource pages, and `robots.txt` advertises the sitemap to search engines.
 
 ## Adding or editing a resource
 
@@ -87,7 +88,11 @@ Resources with `external_url` set may still have generated pages, but the homepa
 
 ## Deployment
 
-The `.github/workflows/pages.yml` workflow builds the site and validates the generated HTML with the official Nu Html Checker for pull requests and relevant changes. Valid changes on `main` are deployed to GitHub Pages; the workflow can also be started manually.
+The `.github/workflows/pages.yml` workflow builds the site, validates the generated HTML with the official Nu Html Checker, and blocks pull requests that contain broken internal links. Valid changes on `main` are deployed to GitHub Pages; the workflow can also be started manually.
+
+The `.github/workflows/external-links.yml` workflow checks external links on the first day of each month, when a new resource page is added to `main`, or when started manually. External checks are kept separate from deployment so a temporary third-party outage cannot prevent the site from publishing.
+
+Lychee is pinned to a full commit SHA in both workflows. The repository's existing monthly `github-actions` Dependabot configuration keeps that pinned action updated.
 
 After a successful GitHub Pages deployment, the workflow purges the Cloudflare cache for the configured zone using these repository settings:
 
@@ -107,5 +112,7 @@ cheneypta.org
 Configure the repository Pages settings and DNS records in GitHub and your DNS provider.
 
 ## Maintenance notes
+
+Every user-facing page must include a `last_updated` date in its front matter. Whenever a page's content, links, metadata, or accessibility information changes, update `last_updated` to the date of that change so the sitemap reports an accurate modification date.
 
 When making site changes, review this README in the same pull request and update it whenever the site structure, resource fields, category names, URL behavior, layout behavior, language behavior, or deployment behavior changes.

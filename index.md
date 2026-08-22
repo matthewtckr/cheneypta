@@ -2,6 +2,7 @@
 layout: default
 title: Home
 title_es: Inicio
+last_updated: 2026-08-22
 sections:
   - name: Events
     name_es: Eventos

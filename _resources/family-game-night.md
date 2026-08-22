@@ -7,7 +7,7 @@ category: Events
 category_es: Eventos
 order: 50
 external_url: https://www.parentsquare.com/feeds/84839362
-last_updated: 2026-08-06
+last_updated: 2026-08-22
 content_en: |
   Family Game Night is coming in August 2026.
 
