@@ -1,0 +1,218 @@
+- id: pre-k
+  grade_en: Pre-K
+  grade_es: Pre-K
+  image: /assets/supply-lists/2026_pre_k.jpg
+  source_title: Cheney Elementary Pre-Kindergarten Wishlist 2026-2027
+  intro:
+    - "Your child will need the following items. Please label these items with your child's name."
+  groups:
+    - title: Required items
+      items:
+        - Reusable water bottle
+        - Plastic resting mat
+        - Small blanket for rest time
+        - Set of headphones (no earbuds)
+        - "Complete change of clothes labeled with your child's name: shirt, shorts or pants, socks, and underwear. This will be kept at school to be used as needed."
+        - Full-sized backpack (no wheels)
+    - title: Optional
+      items:
+        - "Lunch box, if your child will bring lunch from home. The school does not have a microwave or refrigerator for lunches."
+    - title: Voluntary donations — please do not put names on these items
+      items:
+        - Antibacterial hand soap
+        - Hand sanitizer
+        - Copy paper
+        - Baby wipes
+        - Tissues
+        - Spiral notebook
+        - Construction paper
+        - Play-Doh
+        - Plastic cups — any size and any color
+        - Crayons — 24 count
+        - Glue sticks
+        - Dry erase markers
+        - Ziploc bags — any size
+        - Disinfecting wipes
+        - Watercolor paints
+        - Washable markers
+        - Colored pencils
+        - A box of healthy snacks to share with the class of 20 students
+
+- id: kindergarten
+  grade_en: Kindergarten
+  grade_es: Kindergarten
+  image: /assets/supply-lists/2026_kindergarten.jpg
+  source_title: Cheney Elementary Kindergarten Supply List
+  intro:
+    - Supplies will be shared within the classroom.
+    - "Please do not label items with your child's name unless noted."
+  groups:
+    - title: Supply list
+      items:
+        - Full-size backpack without wheels (label with name)
+        - Reusable water bottle (label with name)
+        - "Headphones (label with name). No earbuds or wireless headphones; must have a USB-C-style plug."
+        - 24 small glue sticks
+        - 2 reams of copy or printer paper
+        - 2 boxes of Crayola crayons — 24 count
+        - "2 boxes of Classic Color markers — 8 count: 1 skinny and 1 fat"
+        - 12 yellow #2 pencils
+        - "2 primary composition books. These are different from regular composition books."
+        - 2 packs of 4 EXPO dry erase markers — all black preferred
+        - 1 box of tissues
+        - 1 container of liquid hand soap
+        - 1 bottle of hand sanitizer
+        - "4 containers of Play-Doh — please do not get a dollar-store brand"
+
+- id: first-grade
+  grade_en: First grade
+  grade_es: Primer grado
+  image: /assets/supply-lists/2026_1st_grade.jpg
+  source_title: First Grade Supply List
+  groups:
+    - title: Supply list
+      items:
+        - 2 pairs of headphones with USB-C — no wireless headphones or earbuds
+        - Full-size backpack without wheels
+        - 2 large pink erasers
+        - 1 pair of scissors
+        - 4 reams of copy paper
+        - Pencil box
+        - 2 boxes of tissues
+        - 1 bottle of hand soap
+        - 1 bottle of hand sanitizer
+        - 10 glue sticks
+        - 1 wide-ruled composition book
+        - 2 packs of sharpened yellow pencils
+        - 2 boxes of Crayola crayons — 24 count
+        - 4 four-packs of thin black dry erase markers
+        - "2 plastic folders with prongs: 1 red and 1 green"
+        - "2 primary writing picture journals: half-page lined with drawing space on top"
+    - title: Optional home practice
+      items:
+        - Addition and subtraction flashcards
+    - title: Wish list
+      items:
+        - Gallon-size resealable bags
+        - Colored copy paper
+        - White cardstock
+        - Markers or colored pencils
+        - Post-it notes
+        - Index cards
+        - Quart-size bags
+        - Play-Doh
+        - Sandwich bags
+        - Bandages without characters
+
+- id: second-grade
+  grade_en: Second grade
+  grade_es: Segundo grado
+  image: /assets/supply-lists/2026_2nd_grade.jpg
+  source_title: Second Grade Supply List 2026-2027
+  groups:
+    - title: Supply list
+      items:
+        - 2 dozen pencils
+        - Pencil sharpener with cover
+        - 4 pink erasers
+        - 3 headphones — write the student's name on them
+        - 3 reams of copy paper
+        - Pencil bag — no boxes
+        - 2 boxes of crayons — 24 count
+        - Highlighters — 4 different colors
+        - 4 black dry erase markers
+        - 2 boxes of tissues
+        - Disinfecting wipes
+
+- id: third-grade
+  grade_en: Third grade
+  grade_es: Tercer grado
+  image: /assets/supply-lists/2026_3rd_grade.jpg
+  source_title: Back to School — Grade 3 Supply List
+  groups:
+    - title: Supply list
+      items:
+        - 2 composition notebooks
+        - 2 folders
+        - Erasers
+        - 3 reams of paper
+        - Colored pencils
+        - Crayons
+        - Sharpened pencils
+        - Scissors
+        - Glue sticks
+        - Sticky notes
+        - Wired headphones
+        - Wired computer mouse
+        - Hand sanitizer
+        - Highlighters
+        - Handheld whiteboard
+        - EXPO markers and erasers
+        - Different-size Ziploc bags
+        - Index cards
+        - Astrobright printer paper
+        - Tissues
+
+- id: fourth-grade
+  grade_en: Fourth grade
+  grade_es: Cuarto grado
+  image: /assets/supply-lists/2026_4th_grade.jpg
+  source_title: Cheney Elementary School Fourth Grade Supply List
+  intro:
+    - "Headphones must last all year; parents are responsible for replacing them. They are needed for every subject, testing, and tutoring. Do not send them in a box or package. Write your child's name on them and send them in a large Ziploc bag."
+  groups:
+    - title: Supply list
+      items:
+        - 1 pair of headphones — no Bluetooth or earbuds
+        - 1 zipper pencil pouch
+        - 1 wide-ruled marble composition notebook for English language arts
+        - 1 wide-ruled spiral notebook for math
+        - "4 plastic two-pocket folders: 2 for English language arts, 1 for math, and 1 for take-home work"
+        - "2 to 4 packs of 24-count, pre-sharpened #2 pencils. Wooden yellow pencils only."
+        - 2 to 4 packs of EXPO dry erase markers
+        - 1 package of Elmer's glue sticks
+        - 1 to 2 reams of white copy paper
+    - title: Classroom extras
+      items:
+        - Boxes of tissues
+        - Refill liquid soap
+        - Disinfecting wipes
+        - Colored pencils
+        - Gallon- and quart-size Ziploc bags
+        - Thin colored markers
+  closing:
+    - Bring the items to Meet the Teacher in a labeled bag.
+
+- id: fifth-grade
+  grade_en: Fifth grade
+  grade_es: Quinto grado
+  image: /assets/supply-lists/2026_5th_grade.jpg
+  source_title: Cheney Elementary Fifth Grade Supply and Wish List
+  intro:
+    - Please bring these items to Meet the Teacher or have them on the first day of school.
+  groups:
+    - title: Supply list
+      items:
+        - 2 pairs of computer headphones or earbuds
+        - 2 composition notebooks for math
+        - 1 hardcover spiral notebook with 5 dividers for English language arts
+        - 3 packs of pre-sharpened wood pencils — no mechanical pencils
+        - 5 pocket folders with 3 prongs
+        - 1 pack of colored highlighters
+        - 1 pack of erasers
+        - 2 packs of wide black dry erase markers
+        - 1 soft pencil case
+        - 1 dry erase board
+    - title: Donation wish list
+      items:
+        - 2 reams of copy paper
+        - 1 box of tissues
+        - 2 packs of staples
+        - 2 rolls of Scotch tape
+        - 1 bottle of hand sanitizer
+        - 2 containers of disinfecting wipes
+        - 1 bottle of hand soap
+        - 1 box of Ziploc bags
+        - 1 box of bandages
+        - 1 pack of dry erase markers
+        - 1 pack of lined note cards
