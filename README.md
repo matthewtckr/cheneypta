@@ -66,6 +66,8 @@ Each resource can include both English and Spanish content in the same file:
 
 The site detects a visitor's browser language preference and shows Spanish automatically when the browser language starts with `es`. Visitors can also switch languages manually.
 
+The language switch also updates the document language, page title, selected-language state, navigation labels, home-link label, language-selector label, and logo alternative text so assistive technologies use the correct language.
+
 Manual language choices are saved in `localStorage` only when the selected language differs from the browser preference. When a visitor changes back to the browser-preferred language, the saved language preference is removed.
 
 If Spanish is not available yet, remove `content_es` or leave it out. Spanish metadata fields can also be omitted; the site falls back to the English values.

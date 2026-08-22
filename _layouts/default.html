@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <title data-title-en="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}" data-title-es="{% if page.title_es %}{{ page.title_es | escape }} | {% elsif page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}">{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 </head>
@@ -11,17 +11,17 @@
   <a class="skip-link" href="#main-content"><span data-lang="en">Skip to main content</span><span data-lang="es">Saltar al contenido principal</span></a>
   <div class="page-shell">
     <header class="site-header">
-      <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Cheney Elementary PTA home">
-        <img class="site-logo" src="{{ '/assets/logo.png' | relative_url }}" width="184" height="192" alt="Cheney Elementary school logo">
+      <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Cheney Elementary PTA home" data-aria-label-en="Cheney Elementary PTA home" data-aria-label-es="Inicio de Cheney Elementary PTA">
+        <img class="site-logo" src="{{ '/assets/logo.png' | relative_url }}" width="184" height="192" alt="Cheney Elementary school logo" data-alt-en="Cheney Elementary school logo" data-alt-es="Logotipo de Cheney Elementary">
         <span class="site-title">Cheney Elementary PTA<sup>®</sup></span>
       </a>
-      <nav aria-label="Primary navigation">
+      <nav aria-label="Primary navigation" data-aria-label-en="Primary navigation" data-aria-label-es="Navegación principal">
         <a href="https://cheneyes.ocps.net/"><span data-lang="en">Official School Site</span><span data-lang="es">Sitio oficial de la escuela</span></a>
         <a href="https://www.ocps.net/parentsquare">ParentSquare</a>
       </nav>
     </header>
 
-    <div class="language-toggle" role="group" aria-label="Language selection">
+    <div class="language-toggle" role="group" aria-label="Language selection" data-aria-label-en="Language selection" data-aria-label-es="Selección de idioma">
       <button type="button" data-set-lang="en">English</button>
       <button type="button" data-set-lang="es">Español</button>
     </div>
