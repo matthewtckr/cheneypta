@@ -6,7 +6,7 @@ description_es: La Noche de juegos en familia será en agosto de 2026. Consulte 
 category: Events
 category_es: Eventos
 order: 50
-external_url: https://www.ocps.net/parentsquare
+external_url: https://www.parentsquare.com/feeds/84839362
 last_updated: 2026-08-06
 content_en: |
   Family Game Night is coming in August 2026.
