@@ -14,6 +14,7 @@ The site is intended to remain a minimal quick resource page for families and ne
 - The site logo image is stored at `assets/logo.png` and is referenced by the default layout.
 - `sitemap.xml` lists the homepage and generated resource pages, and `robots.txt` advertises the sitemap to search engines.
 - `.well-known/security.txt` directs security researchers to GitHub's private vulnerability reporting form.
+- `404.html` provides a bilingual not-found page using the site's external stylesheet so it remains styled under the Content Security Policy.
 
 ## Adding or editing a resource
 
