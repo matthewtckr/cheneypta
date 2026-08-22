@@ -43,7 +43,7 @@ If `external_url` is set, the homepage card links directly to that external URL.
 
 On generated resource pages, the `Open resource` button only appears when `external_url` is set.
 
-The school-supply-list resource uses structured data from `_data/supply_lists.yml` and the `_includes/supply-lists.html` include to embed each original scan alongside an accessible text transcript.
+The school-supply-list resource uses structured bilingual data from `_data/supply_lists.yml` and the `_includes/supply-lists.html` include to show each grade in a collapsed disclosure with an accessible transcript and a link to the original flyer.
 
 ## Categories
 
