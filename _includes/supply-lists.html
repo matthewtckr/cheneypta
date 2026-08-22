@@ -1,36 +1,36 @@
 {% if include.language == "es" %}
-  <p>Las listas originales de la escuela están en inglés. Cada imagen se incluye como referencia y va seguida de una transcripción de texto accesible que conserva el contenido de la lista.</p>
+  <p>Seleccione un grado para ampliar su lista de útiles traducida. También puede abrir el volante original en inglés.</p>
 {% else %}
-  <p>Each original school list is embedded for reference and followed by an accessible text transcript.</p>
+  <p>Select a grade to expand its accessible supply list. A link to the original flyer is also available.</p>
 {% endif %}
 
 {% for supply_list in site.data.supply_lists %}
-  <section class="supply-list-entry" aria-labelledby="{{ include.language }}-{{ supply_list.id }}-heading">
-    <h2 id="{{ include.language }}-{{ supply_list.id }}-heading">{% if include.language == "es" %}{{ supply_list.grade_es }}{% else %}{{ supply_list.grade_en }}{% endif %}</h2>
-    <div class="supply-list-grid">
-      <figure class="supply-list-scan">
-        <img src="{{ supply_list.image | relative_url }}" width="1700" height="2200" loading="lazy" alt="">
-        <figcaption>
-          <a href="{{ supply_list.image | relative_url }}">
-            {% if include.language == "es" %}Ver la imagen escaneada a tamaño completo{% else %}View the full-size scanned list{% endif %}
-          </a>
-        </figcaption>
-      </figure>
-
+  <details class="supply-list-entry">
+    <summary>{% if include.language == "es" %}{{ supply_list.grade_es }}{% else %}{{ supply_list.grade_en }}{% endif %}</summary>
+    <div class="supply-list-content">
+      <p><a href="{{ supply_list.image | relative_url }}">{% if include.language == "es" %}Abrir el volante original en inglés{% else %}Open the original flyer{% endif %}</a></p>
       <div class="supply-list-transcript">
         <h3>{% if include.language == "es" %}Transcripción de texto accesible{% else %}Accessible text transcript{% endif %}</h3>
-        <div lang="en">
-          <p><strong>{{ supply_list.source_title }}</strong></p>
-          {% for paragraph in supply_list.intro %}<p>{{ paragraph }}</p>{% endfor %}
+        <div>
+          <p><strong>{% if include.language == "es" %}{{ supply_list.source_title_es }}{% else %}{{ supply_list.source_title }}{% endif %}</strong></p>
+          {% if include.language == "es" %}
+            {% assign intro = supply_list.intro_es %}
+            {% assign closing = supply_list.closing_es %}
+          {% else %}
+            {% assign intro = supply_list.intro %}
+            {% assign closing = supply_list.closing %}
+          {% endif %}
+          {% for paragraph in intro %}<p>{{ paragraph }}</p>{% endfor %}
           {% for group in supply_list.groups %}
-            <p><strong>{{ group.title }}</strong></p>
+            <p><strong>{% if include.language == "es" %}{{ group.title_es }}{% else %}{{ group.title }}{% endif %}</strong></p>
             <ul>
-              {% for item in group.items %}<li>{{ item }}</li>{% endfor %}
+              {% if include.language == "es" %}{% assign items = group.items_es %}{% else %}{% assign items = group.items %}{% endif %}
+              {% for item in items %}<li>{{ item }}</li>{% endfor %}
             </ul>
           {% endfor %}
-          {% for paragraph in supply_list.closing %}<p>{{ paragraph }}</p>{% endfor %}
+          {% for paragraph in closing %}<p>{{ paragraph }}</p>{% endfor %}
         </div>
       </div>
     </div>
-  </section>
+  </details>
 {% endfor %}
