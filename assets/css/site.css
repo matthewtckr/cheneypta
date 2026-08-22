@@ -355,18 +355,18 @@ h2 {
   padding: 18px;
 }
 
-.supply-list-transcript {
+.supply-list-details {
   padding: 18px;
   border: 1px solid var(--border);
   border-radius: 14px;
   background: var(--soft);
 }
 
-.supply-list-transcript h3 {
+.supply-list-details h2 {
   margin-bottom: 12px;
 }
 
-.supply-list-transcript ul {
+.supply-list-details ul {
   padding-left: 22px;
 }
 

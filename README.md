@@ -43,7 +43,7 @@ If `external_url` is set, the homepage card links directly to that external URL.
 
 On generated resource pages, the `Open resource` button only appears when `external_url` is set.
 
-The school-supply-list resource uses structured bilingual data from `_data/supply_lists.yml` and the `_includes/supply-lists.html` include to show each grade in a collapsed disclosure with an accessible transcript and a link to the original flyer.
+The school-supply-list resource uses structured bilingual data from `_data/supply_lists.yml` and the `_includes/supply-lists.html` include to show each grade in a collapsed disclosure with the supply list written directly on the page and a link to the original flyer.
 
 ## Categories
 
@@ -87,7 +87,7 @@ Resources with `external_url` set may still have generated pages, but the homepa
 
 ## Deployment
 
-The `.github/workflows/pages.yml` workflow builds and deploys the site to GitHub Pages when relevant site files change on `main` or when the workflow is started manually.
+The `.github/workflows/pages.yml` workflow builds the site and validates the generated HTML with the official Nu Html Checker for pull requests and relevant changes. Valid changes on `main` are deployed to GitHub Pages; the workflow can also be started manually.
 
 After a successful GitHub Pages deployment, the workflow purges the Cloudflare cache for the configured zone using these repository settings:
 
