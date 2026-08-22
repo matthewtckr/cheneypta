@@ -1,0 +1,36 @@
+{% if include.language == "es" %}
+  <p>Las listas originales de la escuela están en inglés. Cada imagen se incluye como referencia y va seguida de una transcripción de texto accesible que conserva el contenido de la lista.</p>
+{% else %}
+  <p>Each original school list is embedded for reference and followed by an accessible text transcript.</p>
+{% endif %}
+
+{% for supply_list in site.data.supply_lists %}
+  <section class="supply-list-entry" aria-labelledby="{{ include.language }}-{{ supply_list.id }}-heading">
+    <h2 id="{{ include.language }}-{{ supply_list.id }}-heading">{% if include.language == "es" %}{{ supply_list.grade_es }}{% else %}{{ supply_list.grade_en }}{% endif %}</h2>
+    <div class="supply-list-grid">
+      <figure class="supply-list-scan">
+        <img src="{{ supply_list.image | relative_url }}" width="1700" height="2200" loading="lazy" alt="">
+        <figcaption>
+          <a href="{{ supply_list.image | relative_url }}">
+            {% if include.language == "es" %}Ver la imagen escaneada a tamaño completo{% else %}View the full-size scanned list{% endif %}
+          </a>
+        </figcaption>
+      </figure>
+
+      <div class="supply-list-transcript">
+        <h3>{% if include.language == "es" %}Transcripción de texto accesible{% else %}Accessible text transcript{% endif %}</h3>
+        <div lang="en">
+          <p><strong>{{ supply_list.source_title }}</strong></p>
+          {% for paragraph in supply_list.intro %}<p>{{ paragraph }}</p>{% endfor %}
+          {% for group in supply_list.groups %}
+            <p><strong>{{ group.title }}</strong></p>
+            <ul>
+              {% for item in group.items %}<li>{{ item }}</li>{% endfor %}
+            </ul>
+          {% endfor %}
+          {% for paragraph in supply_list.closing %}<p>{{ paragraph }}</p>{% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endfor %}

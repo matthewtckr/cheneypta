@@ -18,18 +18,31 @@ layout: default
     <p><a class="primary-button" href="{{ external_url }}"><span data-lang="en">Open resource</span><span data-lang="es">Abrir recurso</span></a></p>
   {% endif %}
 
-  <section class="translation-card" data-lang="en">
-    <div class="content-block">
-      {{ page.content_en | markdownify }}
-    </div>
-  </section>
-
-  {% if page.content_es %}
-    <section class="translation-card" lang="es" data-lang="es">
+  {% if page.supply_lists %}
+    <section class="translation-card" data-lang="en">
       <div class="content-block">
-        {{ page.content_es | markdownify }}
+        {% include supply-lists.html language="en" %}
       </div>
     </section>
+    <section class="translation-card" lang="es" data-lang="es">
+      <div class="content-block">
+        {% include supply-lists.html language="es" %}
+      </div>
+    </section>
+  {% else %}
+    <section class="translation-card" data-lang="en">
+      <div class="content-block">
+        {{ page.content_en | markdownify }}
+      </div>
+    </section>
+
+    {% if page.content_es %}
+      <section class="translation-card" lang="es" data-lang="es">
+        <div class="content-block">
+          {{ page.content_es | markdownify }}
+        </div>
+      </section>
+    {% endif %}
   {% endif %}
 
   {% if page.last_updated %}
