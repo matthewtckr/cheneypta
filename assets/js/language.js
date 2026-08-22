@@ -30,6 +30,21 @@
     document.documentElement.setAttribute("lang", language);
     document.body.setAttribute("data-current-lang", language);
 
+    var title = document.querySelector("title[data-title-en][data-title-es]");
+    if (title) {
+      document.title = title.getAttribute("data-title-" + language);
+    }
+
+    var labeledElements = document.querySelectorAll("[data-aria-label-en][data-aria-label-es]");
+    labeledElements.forEach(function (element) {
+      element.setAttribute("aria-label", element.getAttribute("data-aria-label-" + language));
+    });
+
+    var images = document.querySelectorAll("img[data-alt-en][data-alt-es]");
+    images.forEach(function (image) {
+      image.setAttribute("alt", image.getAttribute("data-alt-" + language));
+    });
+
     var buttons = document.querySelectorAll("[data-set-lang]");
     buttons.forEach(function (button) {
       var isActive = button.getAttribute("data-set-lang") === language;
