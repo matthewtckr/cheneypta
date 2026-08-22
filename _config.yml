@@ -19,6 +19,9 @@ defaults:
     values:
       layout: resource
 
+include:
+  - .well-known
+
 exclude:
   - README.md
   - Gemfile

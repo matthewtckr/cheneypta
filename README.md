@@ -13,6 +13,7 @@ The site is intended to remain a minimal quick resource page for families and ne
 - Language toggle behavior is in `assets/js/language.js`.
 - The site logo image is stored at `assets/logo.png` and is referenced by the default layout.
 - `sitemap.xml` lists the homepage and generated resource pages, and `robots.txt` advertises the sitemap to search engines.
+- `.well-known/security.txt` directs security researchers to GitHub's private vulnerability reporting form.
 
 ## Adding or editing a resource
 
@@ -88,7 +89,7 @@ Resources with `external_url` set may still have generated pages, but the homepa
 
 ## Deployment
 
-The `.github/workflows/pages.yml` workflow builds the site, validates the generated HTML with the official Nu Html Checker, and blocks pull requests that contain broken internal links. Valid changes on `main` are deployed to GitHub Pages; the workflow can also be started manually.
+The `.github/workflows/pages.yml` workflow builds the site, validates the generated HTML with the official Nu Html Checker, and blocks pull requests that contain broken internal links. Valid changes on `main`, including updates to `.well-known/security.txt`, are deployed to GitHub Pages; the workflow can also be started manually.
 
 The `.github/workflows/external-links.yml` workflow checks external links on the first day of each month, when a new resource page is added to `main`, or when started manually. External checks are kept separate from deployment so a temporary third-party outage cannot prevent the site from publishing.
 

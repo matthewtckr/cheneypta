@@ -1,0 +1,4 @@
+Contact: https://github.com/matthewtckr/cheneypta/security/advisories/new
+Expires: 2027-08-21T00:00:00Z
+Preferred-Languages: en, es
+Canonical: https://cheneypta.org/.well-known/security.txt
