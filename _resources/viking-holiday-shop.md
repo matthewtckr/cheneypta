@@ -5,7 +5,7 @@ description: Shop December 9–15, 2026 during school hours, with extended hours
 description_es: Compre del 9 al 15 de diciembre de 2026 durante el horario escolar, con horario extendido de 3 a 7 p. m. el 15 de diciembre. Se necesitan voluntarios aprobados por ADDitions.
 category: Events
 category_es: Eventos
-order: 55
+order: 51
 external_url: ""
 last_updated: 2026-08-23
 content_en: |
