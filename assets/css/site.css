@@ -151,8 +151,8 @@ sup {
   color: #ffffff;
 }
 
-body[data-current-lang="en"] [data-lang="es"],
-body[data-current-lang="es"] [data-lang="en"] {
+html[data-current-lang="en"] [data-lang="es"],
+html[data-current-lang="es"] [data-lang="en"] {
   display: none !important;
 }
 
