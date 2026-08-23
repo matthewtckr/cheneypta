@@ -5,7 +5,7 @@ description: Join us for the Spring Picnic. Date to be announced. Volunteers are
 description_es: Acompáñenos en el Picnic de primavera. Fecha por anunciar. Se necesitan voluntarios.
 category: Events
 category_es: Eventos
-order: 53
+order: 54
 external_url: ""
 last_updated: 2026-08-23
 content_en: |
