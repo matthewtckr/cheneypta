@@ -28,7 +28,7 @@
     }
 
     document.documentElement.setAttribute("lang", language);
-    document.body.setAttribute("data-current-lang", language);
+    document.documentElement.setAttribute("data-current-lang", language);
 
     var title = document.querySelector("title[data-title-en][data-title-es]");
     if (title) {
@@ -67,8 +67,11 @@
     window.localStorage.setItem("site-language", language);
   }
 
+  var initialLanguage = getPreferredLanguage();
+  document.documentElement.setAttribute("data-current-lang", initialLanguage);
+
   document.addEventListener("DOMContentLoaded", function () {
-    applyLanguage(getPreferredLanguage());
+    applyLanguage(initialLanguage);
 
     var buttons = document.querySelectorAll("[data-set-lang]");
     buttons.forEach(function (button) {
