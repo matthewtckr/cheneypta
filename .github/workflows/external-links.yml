@@ -54,6 +54,7 @@ jobs:
             --no-progress
             --max-retries 3
             --timeout 30
+            --exclude '^https://www\.parentsquare\.com/feeds/84839362$'
             --root-dir "$(pwd)/_site"
             --index-files index.html
             './_site/**/*.html'
