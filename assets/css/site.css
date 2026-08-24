@@ -10,6 +10,29 @@
   --border: #d9dde4;
   --soft: #eef4ff;
   --shadow: 0 8px 24px rgba(24, 32, 51, 0.08);
+  --accent-foreground: #ffffff;
+  --notice-bg: #fff9df;
+  --notice-border: #d6c575;
+  --nav-hover-bg: #ffffff;
+}
+
+html[data-dark-mode="on"] {
+  color-scheme: dark;
+  --bg: #101827;
+  --card: #182337;
+  --text: #f1f5fb;
+  --muted: #bbc7d8;
+  --accent: #91baff;
+  --accent-dark: #d8e6ff;
+  --gold: #ECD578;
+  --grey: #aaa59d;
+  --border: #3a4960;
+  --soft: #202e45;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --accent-foreground: #101827;
+  --notice-bg: #302b18;
+  --notice-border: #8f7c2f;
+  --nav-hover-bg: #202e45;
 }
 
 * {
@@ -38,7 +61,7 @@ a {
   padding: 10px 14px;
   border-radius: 8px;
   background: var(--accent-dark);
-  color: #ffffff;
+  color: var(--accent-foreground);
   font-weight: 700;
   transform: translateY(-160%);
 }
@@ -148,7 +171,7 @@ sup {
 
 .language-toggle button.is-active {
   background: var(--accent);
-  color: #ffffff;
+  color: var(--accent-foreground);
 }
 
 html[data-current-lang="en"] [data-lang="es"],
@@ -159,10 +182,10 @@ html[data-current-lang="es"] [data-lang="en"] {
 .official-info-note {
   margin: 8px 0 24px;
   padding: 14px 16px;
-  border: 1px solid #d6c575;
+  border: 1px solid var(--notice-border);
   border-left: 5px solid var(--gold);
   border-radius: 14px;
-  background: #fff9df;
+  background: var(--notice-bg);
   color: var(--text);
 }
 
@@ -299,7 +322,7 @@ h2 {
   padding: 15px 18px;
   border-radius: 14px;
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-foreground);
   font-weight: 800;
   text-align: center;
   text-decoration: none;
@@ -433,7 +456,7 @@ h2 {
   .site-header nav a:focus-visible {
     border-color: var(--accent);
     border-left-color: var(--gold);
-    background: #ffffff;
+    background: var(--nav-hover-bg);
   }
 
   .language-toggle {
