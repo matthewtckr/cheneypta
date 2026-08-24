@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="32x32">
+  <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
   <title data-title-en="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}" data-title-es="{% if page.title_es %}{{ page.title_es | escape }} | {% elsif page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}">{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description | escape }}" data-description-en="{{ page.description | default: site.description | escape }}" data-description-es="{{ page.description_es | default: site.description_es | default: page.description | default: site.description | escape }}">
   <script src="{{ '/assets/js/language.js' | relative_url }}"></script>
