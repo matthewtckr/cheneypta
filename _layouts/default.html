@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title data-title-en="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}" data-title-es="{% if page.title_es %}{{ page.title_es | escape }} | {% elsif page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}">{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description | escape }}" data-description-en="{{ page.description | default: site.description | escape }}" data-description-es="{{ page.description_es | default: site.description_es | default: page.description | default: site.description | escape }}">
+  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/language.js' | relative_url }}"></script>
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 </head>
@@ -13,7 +14,7 @@
   <div class="page-shell">
     <header class="site-header">
       <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Cheney Elementary PTA home" data-aria-label-en="Cheney Elementary PTA home" data-aria-label-es="Inicio de Cheney Elementary PTA">
-        <img class="site-logo" src="{{ '/assets/logo.png' | relative_url }}" width="184" height="192" alt="Cheney Elementary school logo" data-alt-en="Cheney Elementary school logo" data-alt-es="Logotipo de Cheney Elementary">
+        <img class="site-logo" src="{{ '/assets/logo.svg' | relative_url }}" width="184" height="192" alt="Cheney Elementary school logo" data-alt-en="Cheney Elementary school logo" data-alt-es="Logotipo de Cheney Elementary">
         <span class="site-title">Cheney Elementary PTA<sup>®</sup></span>
       </a>
       <nav aria-label="Primary navigation" data-aria-label-en="Primary navigation" data-aria-label-es="Navegación principal">
