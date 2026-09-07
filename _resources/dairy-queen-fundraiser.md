@@ -11,9 +11,9 @@ last_updated: 2026-09-07
 content_en: |
   Join us at Dairy Queen, 7825 E. Colonial Drive in Orlando, on September 8 from 5–8 p.m. Present the flyer when ordering, and 20% of tracked sales will support Cheney Elementary PTA.
 
-  [Open or print the English flyer](/assets/events/dairy-queen-fundraiser-en.png) · [Abrir o imprimir el volante en español](/assets/events/dairy-queen-fundraiser-es.png)
+  [Open or print the flyer](/assets/events/2026-09-08-dairy-queen-fundraiser-en.png)
 content_es: |
   Acompáñenos en Dairy Queen, 7825 E. Colonial Drive en Orlando, el 8 de septiembre de 5 a 8 p. m. Presente el volante al ordenar y el 20% de las ventas registradas apoyará a Cheney Elementary PTA.
 
-  [Abrir o imprimir el volante en español](/assets/events/dairy-queen-fundraiser-es.png) · [Abrir o imprimir el volante en inglés](/assets/events/dairy-queen-fundraiser-en.png)
+  [Abrir o imprimir el volante](/assets/events/2026-09-08-dairy-queen-fundraiser-es.png)
 ---
