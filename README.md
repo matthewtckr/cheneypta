@@ -1,5 +1,7 @@
 # Cheney Elementary PTA Website
 
+**Public website: [cheneypta.org](https://cheneypta.org/)**
+
 This repository contains a simple Jekyll site for Cheney Elementary PTA, designed for GitHub Pages.
 
 The site is intended to remain a minimal quick resource page for families and new parents. It should not replace ParentSquare or the official Cheney Elementary website for current announcements.

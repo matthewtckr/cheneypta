@@ -6,8 +6,49 @@
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="32x32">
   <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
-  <title data-title-en="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}" data-title-es="{% if page.title_es %}{{ page.title_es | escape }} | {% elsif page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}">{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <title data-title-en="{% if page.browser_title %}{{ page.browser_title | escape }}{% else %}{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}{% endif %}" data-title-es="{% if page.browser_title_es %}{{ page.browser_title_es | escape }}{% else %}{% if page.title_es %}{{ page.title_es | escape }} | {% elsif page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}{% endif %}">{% if page.browser_title %}{{ page.browser_title }}{% else %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description | default: site.description | escape }}" data-description-en="{{ page.description | default: site.description | escape }}" data-description-es="{{ page.description_es | default: site.description_es | default: page.description | default: site.description | escape }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "{{ '/' | absolute_url }}#organization",
+    "name": "Cheney Elementary PTA",
+    "alternateName": "Cheney Elementary Parent Teacher Association",
+    "url": "{{ '/' | absolute_url }}",
+    "logo": "{{ '/assets/logo.png' | absolute_url }}",
+    "description": {{ site.description | jsonify }},
+    "location": {
+      "@type": "Place",
+      "name": "Cheney Elementary School",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2000 N Forsyth Rd",
+        "addressLocality": "Orlando",
+        "addressRegion": "FL",
+        "postalCode": "32807",
+        "addressCountry": "US"
+      }
+    },
+    "sameAs": [
+      "https://www.facebook.com/CheneyElementaryOcps",
+      "https://cheneypta.givebacks.com"
+    ],
+    "memberOf": [
+      {
+        "@type": "Organization",
+        "name": "Florida PTA",
+        "url": "https://www.floridapta.org/"
+      },
+      {
+        "@type": "Organization",
+        "name": "National PTA",
+        "url": "https://www.pta.org/"
+      }
+    ]
+  }
+  </script>
   <script src="{{ '/assets/js/language.js' | relative_url }}"></script>
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 </head>
@@ -41,7 +82,7 @@
 
     <footer class="site-footer">
       <p><span data-lang="en">Cheney Elementary PTA<sup>®</sup> is a local Parent Teacher Association serving Cheney Elementary families.</span><span data-lang="es">Cheney Elementary PTA<sup>®</sup> es una asociación local de padres y maestros que sirve a las familias de Cheney Elementary.</span></p>
-      <p class="affiliation-links"><a href="https://www.floridapta.org/"><span data-lang="en">Visit Florida PTA<sup>®</sup></span><span data-lang="es">Visite Florida PTA<sup>®</sup></span></a><a href="https://www.pta.org/"><span data-lang="en">Visit National PTA<sup>®</sup></span><span data-lang="es">Visite National PTA<sup>®</sup></span></a></p>
+      <p class="affiliation-links"><a href="https://www.facebook.com/CheneyElementaryOcps"><span data-lang="en">Follow Cheney Elementary on Facebook</span><span data-lang="es">Siga a Cheney Elementary en Facebook</span></a><a href="https://www.floridapta.org/"><span data-lang="en">Visit Florida PTA<sup>®</sup></span><span data-lang="es">Visite Florida PTA<sup>®</sup></span></a><a href="https://www.pta.org/"><span data-lang="en">Visit National PTA<sup>®</sup></span><span data-lang="es">Visite National PTA<sup>®</sup></span></a></p>
     </footer>
   </div>
 
