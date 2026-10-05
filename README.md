@@ -119,4 +119,6 @@ Configure the repository Pages settings and DNS records in GitHub and your DNS p
 
 Every user-facing page must include a `last_updated` date in its front matter. Whenever a page's content, links, metadata, or accessibility information changes, update `last_updated` to the date of that change so the sitemap reports an accurate modification date.
 
+Whenever a resource card is added, removed, or materially changed—especially an event—also update `index.md`'s `last_updated` date. Resource cards are rendered on the homepage, so these changes materially update the homepage even when `index.md` otherwise stays the same.
+
 When making site changes, review this README in the same pull request and update it whenever the site structure, resource fields, category names, URL behavior, layout behavior, language behavior, or deployment behavior changes.
