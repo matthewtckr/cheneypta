@@ -1,23 +1,23 @@
 ---
 title: Join the PTA
 title_es: Únase al PTA
-description: Memberships are available through the Cheney Store.
-description_es: Las membresías están disponibles en la tienda de Cheney.
+description: Join Cheney Elementary PTA for just $6 to support student programs, teacher appreciation and family events. Membership does not require volunteering or attending meetings, and PTA events remain open to every family.
+description_es: Únase a Cheney Elementary PTA por solo $6 para apoyar programas estudiantiles, el reconocimiento de los maestros y eventos familiares. La membresía no requiere ser voluntario ni asistir a reuniones, y los eventos de la PTA siguen abiertos a todas las familias.
 category: PTA
 category_es: PTA
 order: 40
 external_url: https://cheneypta.givebacks.com/shop?category=16376
-last_updated: 2026-07-04
+last_updated: 2026-10-06
 content_en: |
-  PTA membership helps support school programs, family events, teacher appreciation, and student resources.
+  Join Cheney Elementary PTA for just $6 to support student programs, teacher appreciation and family events.
+
+  Membership does not require volunteering or attending meetings, and PTA events remain open to every family.
 
   Memberships are available through the Cheney Store.
-
-  Membership does not require volunteering, although volunteers are always welcome.
 content_es: |
-  La membresía del PTA ayuda a apoyar programas escolares, eventos familiares, reconocimiento a los maestros y recursos para estudiantes.
+  Únase a Cheney Elementary PTA por solo $6 para apoyar programas estudiantiles, el reconocimiento de los maestros y eventos familiares.
+
+  La membresía no requiere ser voluntario ni asistir a reuniones, y los eventos de la PTA siguen abiertos a todas las familias.
 
   Las membresías están disponibles en la tienda de Cheney.
-
-  Ser miembro no requiere ser voluntario, aunque los voluntarios siempre son bienvenidos.
 ---
