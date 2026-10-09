@@ -49,6 +49,46 @@
     ]
   }
   </script>
+  {% assign ordered_events = site.resources | where: "category", "Events" | sort: "order" %}
+  {% assign featured_event = ordered_events | first %}
+  {% if featured_event and page.url == featured_event.url %}
+    {% if page.event_start_date and page.event_end_date and page.event_location_name and page.event_street_address and page.event_address_locality and page.event_address_region and page.event_postal_code and page.event_image %}
+      {% assign structured_event_description = page.event_description | default: page.description %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "@id": "{{ page.url | absolute_url }}#event",
+    "name": {{ page.title | jsonify }},
+    "description": {{ structured_event_description | jsonify }},
+    "startDate": {{ page.event_start_date | jsonify }},
+    "endDate": {{ page.event_end_date | jsonify }},
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "image": ["{{ page.event_image | absolute_url }}"],
+    "url": "{{ page.url | absolute_url }}",
+    "location": {
+      "@type": "Place",
+      "name": {{ page.event_location_name | jsonify }},
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": {{ page.event_street_address | jsonify }},
+        "addressLocality": {{ page.event_address_locality | jsonify }},
+        "addressRegion": {{ page.event_address_region | jsonify }},
+        "postalCode": {{ page.event_postal_code | jsonify }},
+        "addressCountry": "US"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "@id": "{{ '/' | absolute_url }}#organization",
+      "name": "Cheney Elementary PTA",
+      "url": "{{ '/' | absolute_url }}"
+    }
+  }
+  </script>
+    {% endif %}
+  {% endif %}
   <script src="{{ '/assets/js/language.js' | relative_url }}"></script>
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 </head>
