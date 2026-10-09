@@ -50,6 +50,18 @@ On generated resource pages, the `Open resource` button only appears when `exter
 
 The school-supply-list resource uses structured bilingual data from `_data/supply_lists.yml` and the `_includes/supply-lists.html` include to show each grade in a collapsed disclosure with the supply list written directly on the page and a link to the original flyer.
 
+### Featured event search data
+
+The first card in the Events section—the event with the lowest `order` value—is the featured event. Its detail page automatically includes Event JSON-LD when all of these front-matter fields are present:
+
+- `event_start_date` and `event_end_date` in `YYYY-MM-DD` format
+- `event_location_name`
+- `event_street_address`, `event_address_locality`, `event_address_region`, and `event_postal_code`
+- `event_image`, using a site-relative path to a representative image
+- `event_description` for the search-focused description; when omitted, the regular English `description` is used
+
+Only the featured event's detail page receives Event JSON-LD; the homepage remains an event listing page. Keep the most time-sensitive event first by giving it the lowest Events `order`, and provide complete, accurate event fields without guessing unknown times. When the featured event changes, add the event fields to the new top card and remove or archive expired event resources as usual.
+
 ## Categories
 
 The home page currently displays these sections:
