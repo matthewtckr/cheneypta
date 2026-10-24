@@ -11,7 +11,7 @@ last_updated: 2026-10-24
 content_en: |
   Find programs and resources to support Cheney Elementary students and their families. Follow the official links below for current information.
 
-  ## Extended Day
+  ## Extended Day {#extended-day-en}
 
   Cheney Elementary's Extended Day program offers before-school and after-school care.
 
@@ -37,7 +37,7 @@ content_en: |
 content_es: |
   Encuentre programas y recursos para apoyar a los estudiantes de Cheney Elementary y a sus familias. Consulte los enlaces oficiales a continuación para obtener información actualizada.
 
-  ## Extended Day
+  ## Extended Day {#extended-day-es}
 
   El programa Extended Day de Cheney Elementary ofrece cuidado antes y después de clases.
 
