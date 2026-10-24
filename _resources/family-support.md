@@ -25,7 +25,7 @@ content_en: |
 
   ## Food Pantry
 
-  For information about food pantry support, contact Mrs. MJ through ParentSquare.
+  For information about food pantry support, contact Mrs. MJ through ParentSquare, where she is listed as **Mary Jane Marrero Pamias**.
 
   [Open Cheney Elementary on ParentSquare](https://www.parentsquare.com/schools/37675/).
 
@@ -51,7 +51,7 @@ content_es: |
 
   ## Despensa de alimentos
 
-  Para obtener información sobre el apoyo de la despensa de alimentos, comuníquese con la Sra. MJ a través de ParentSquare.
+  Para obtener información sobre el apoyo de la despensa de alimentos, comuníquese con la Sra. MJ a través de ParentSquare, donde aparece como **Mary Jane Marrero Pamias**.
 
   [Abra la página de Cheney Elementary en ParentSquare](https://www.parentsquare.com/schools/37675/).
 
