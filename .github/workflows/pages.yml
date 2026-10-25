@@ -47,6 +47,11 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -61,11 +66,69 @@ jobs:
           destination: ./_site
 
       - name: Validate HTML with the Nu Html Checker
+        id: nu
         run: |
+          set -o pipefail
           docker run --rm \
             --volume "${PWD}/_site:/site:ro" \
             ghcr.io/validator/validator:latest \
-            vnu --skip-non-html /site
+            vnu --skip-non-html /site 2>&1 | tee "${RUNNER_TEMP}/nu-output.txt"
+
+      - name: Report Nu warnings on the pull request
+        if: >-
+          always() && steps.nu.outcome != 'skipped' &&
+          github.event_name == 'pull_request' &&
+          github.event.pull_request.head.repo.full_name == github.repository &&
+          github.actor != 'dependabot[bot]'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          NU_OUTCOME: ${{ steps.nu.outcome }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import subprocess
+
+          def api(*args):
+              return json.loads(subprocess.check_output(['gh', 'api', *args], text=True))
+
+          output = Path(os.environ['RUNNER_TEMP']) / 'nu-output.txt'
+          if not output.exists():
+              raise SystemExit(0)
+          warnings = [line for line in output.read_text(errors='replace').splitlines()
+                      if 'warning:' in line.lower()]
+          marker = '<!-- cheneypta-nu-warnings -->'
+          endpoint = f"repos/{os.environ['GITHUB_REPOSITORY']}/issues/{os.environ['PR_NUMBER']}/comments"
+          pages = api(endpoint, '--paginate', '--slurp')
+          existing = next((comment for page in pages for comment in page
+                           if comment['user']['login'] == 'github-actions[bot]'
+                           and marker in (comment.get('body') or '')), None)
+          if not warnings and existing is None:
+              raise SystemExit(0)
+          run_url = (f"{os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}"
+                     f"/actions/runs/{os.environ['GITHUB_RUN_ID']}")
+          body = f'{marker}\n### Nu HTML Checker warnings\n\n'
+          if warnings:
+              # Indented code keeps validator output inert in Markdown.
+              excerpt = '\n'.join(warnings)[:45000]
+              body += f'{len(warnings)} warning(s) found:\n\n'
+              body += '\n'.join('    ' + line for line in excerpt.splitlines())
+              if len('\n'.join(warnings)) > 45000:
+                  body += '\n\nOutput truncated; see the full workflow log.'
+          elif os.environ['NU_OUTCOME'] == 'success':
+              body += 'No warnings found in the latest run.'
+          else:
+              body += 'The latest validator run did not complete successfully; see the workflow log.'
+          body += f'\n\n[Workflow run]({run_url})'
+          if existing:
+              api(f"repos/{os.environ['GITHUB_REPOSITORY']}/issues/comments/{existing['id']}",
+                  '--method', 'PATCH', '-f', f'body={body}')
+          else:
+              api(endpoint, '--method', 'POST', '-f', f'body={body}')
+          PY
 
       - name: Validate internal links
         if: github.event_name == 'pull_request'
