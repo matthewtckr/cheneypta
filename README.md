@@ -13,7 +13,7 @@ The site is intended to remain a minimal quick resource page for families and ne
 - The layout for each resource is `_layouts/resource.html`.
 - Shared styling is in `assets/css/site.css`.
 - Language toggle behavior is in `assets/js/language.js`.
-- The site logo image is stored at `assets/logo.png` and is referenced by the default layout.
+- The default layout displays `assets/logo.svg` in the header and uses `assets/logo.png` for the organization logo in structured data.
 - `sitemap.xml` lists the homepage and generated resource pages, and `robots.txt` advertises the sitemap to search engines.
 - `.well-known/security.txt` directs security researchers to GitHub's private vulnerability reporting form.
 - `404.html` provides a bilingual not-found page using the site's external stylesheet so it remains styled under the Content Security Policy.
@@ -44,6 +44,12 @@ content_es: |
 
 The `order` field controls where the card appears inside its section. Lower numbers appear first.
 
+### Event order and cleanup
+
+List upcoming events in chronological order, with the closest upcoming event first. Assign Events `order` values to match their dates, and review those values whenever an event is added or rescheduled. The site sorts by `order`, not automatically by event date. Place events with dates still TBD after events with confirmed dates; do not invent dates to position them.
+
+Remove past event resource files from `_resources/` after the event ends, including the final day of a multi-day event, so their cards and generated pages are no longer published. Git history preserves the removed content. Update the homepage's `last_updated` date, check for links to removed pages, and review the newly featured event's structured data as part of cleanup.
+
 If `external_url` is set, the homepage card links directly to that external URL. If `external_url` is blank, the card links to the generated resource page for that Markdown file.
 
 On generated resource pages, the `Open resource` button only appears when `external_url` is set.
@@ -60,7 +66,7 @@ The first card in the Events sectionâ€”the event with the lowest `order` valueâ€
 - `event_image`, using a site-relative path to a representative image
 - `event_description` for the search-focused description; when omitted, the regular English `description` is used
 
-Only the featured event's detail page receives Event JSON-LD; the homepage remains an event listing page. Keep the most time-sensitive event first by giving it the lowest Events `order`, and provide complete, accurate event fields without guessing unknown times. When the featured event changes, add the event fields to the new top card and remove or archive expired event resources as usual.
+Only the featured event's detail page receives Event JSON-LD; the homepage remains an event listing page. Give the closest upcoming event the lowest Events `order`, and provide complete, accurate event fields without guessing unknown times. When the featured event changes, add the event fields to the new top card and remove past event resources as described above.
 
 ## Categories
 
@@ -76,20 +82,20 @@ Set the `category` field to one of those names to place a resource in that secti
 
 ## English and Spanish content
 
-Each resource can include both English and Spanish content in the same file:
+Maintain English and Spanish content together in each resource file:
 
 - `title` and `description` for English card and page metadata
 - `title_es` and `description_es` for Spanish card and page metadata
 - `content_en` for English page content
 - `content_es` for Spanish page content
 
-The site detects a visitor's browser language preference and shows Spanish automatically when the browser language starts with `es`. Visitors can also switch languages manually.
+The site checks the visitor's browser language list and shows Spanish automatically when any listed language starts with `es`. Visitors can also switch languages manually.
 
 The language switch also updates the document language, page title, selected-language state, navigation labels, home-link label, language-selector label, and logo alternative text so assistive technologies use the correct language.
 
 Manual language choices are saved in `localStorage` only when the selected language differs from the browser preference. When a visitor changes back to the browser-preferred language, the saved language preference is removed.
 
-If Spanish is not available yet, remove `content_es` or leave it out. Spanish metadata fields can also be omitted; the site falls back to the English values.
+When adding or changing visible content, update both languages at the same time, including card descriptions, page content, category labels, navigation, and link labels. Resources that use structured bilingual data, such as school supply lists, should maintain both languages in that data. The template's English metadata fallbacks do not replace the requirement to provide Spanish translations.
 
 ## URLs
 
@@ -97,7 +103,7 @@ Resources are published at simple top-level URLs when they do not link directly 
 
 ```text
 /school-supply-lists/
-/meet-the-teacher/
+/family-support/
 ```
 
 Resources with `external_url` set may still have generated pages, but the homepage card will send visitors directly to the external URL.
@@ -105,6 +111,8 @@ Resources with `external_url` set may still have generated pages, but the homepa
 ## Deployment
 
 The `.github/workflows/pages.yml` workflow builds the site, validates the generated HTML with the official Nu Html Checker, and blocks pull requests that contain broken internal links. It verifies that `.well-known/security.txt` exists in the generated site and includes hidden paths in the Pages artifact. Valid changes on `main` are deployed to GitHub Pages; the workflow can also be started manually.
+
+When Nu warnings are found on a pull request from a branch in this repository, the workflow posts them in one bot comment and updates that comment on later runs. A successful clean run marks previous warnings cleared. Long output is truncated with a link to the workflow log. Fork and Dependabot pull requests retain log-only reporting because their tokens have read-only permissions. Validation errors still fail the build; a failure to post the comment does not fail the build.
 
 The `.github/workflows/external-links.yml` workflow checks external links on the first day of each month, when a new resource page is added to `main`, or when started manually. External checks are kept separate from deployment so a temporary third-party outage cannot prevent the site from publishing.
 
