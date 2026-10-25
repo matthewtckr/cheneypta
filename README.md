@@ -44,6 +44,12 @@ content_es: |
 
 The `order` field controls where the card appears inside its section. Lower numbers appear first.
 
+### Event order and cleanup
+
+List upcoming events in chronological order, with the closest upcoming event first. Assign Events `order` values to match their dates, and review those values whenever an event is added or rescheduled. The site sorts by `order`, not automatically by event date. Place events with dates still TBD after events with confirmed dates; do not invent dates to position them.
+
+Remove past event resource files from `_resources/` after the event ends, including the final day of a multi-day event, so their cards and generated pages are no longer published. Git history preserves the removed content. Update the homepage's `last_updated` date, check for links to removed pages, and review the newly featured event's structured data as part of cleanup.
+
 If `external_url` is set, the homepage card links directly to that external URL. If `external_url` is blank, the card links to the generated resource page for that Markdown file.
 
 On generated resource pages, the `Open resource` button only appears when `external_url` is set.
@@ -60,7 +66,7 @@ The first card in the Events sectionâ€”the event with the lowest `order` valueâ€
 - `event_image`, using a site-relative path to a representative image
 - `event_description` for the search-focused description; when omitted, the regular English `description` is used
 
-Only the featured event's detail page receives Event JSON-LD; the homepage remains an event listing page. Keep the most time-sensitive event first by giving it the lowest Events `order`, and provide complete, accurate event fields without guessing unknown times. When the featured event changes, add the event fields to the new top card and remove or archive expired event resources as usual.
+Only the featured event's detail page receives Event JSON-LD; the homepage remains an event listing page. Give the closest upcoming event the lowest Events `order`, and provide complete, accurate event fields without guessing unknown times. When the featured event changes, add the event fields to the new top card and remove past event resources as described above.
 
 ## Categories
 
