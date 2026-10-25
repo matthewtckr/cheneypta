@@ -19,29 +19,29 @@ layout: default
   {% endif %}
 
   {% if page.supply_lists %}
-    <section class="translation-card" data-lang="en">
+    <div class="translation-card" data-lang="en">
       <div class="content-block">
         {% include supply-lists.html language="en" %}
       </div>
-    </section>
-    <section class="translation-card" lang="es" data-lang="es">
+    </div>
+    <div class="translation-card" lang="es" data-lang="es">
       <div class="content-block">
         {% include supply-lists.html language="es" %}
       </div>
-    </section>
+    </div>
   {% else %}
-    <section class="translation-card" data-lang="en">
+    <div class="translation-card" data-lang="en">
       <div class="content-block">
         {{ page.content_en | markdownify }}
       </div>
-    </section>
+    </div>
 
     {% if page.content_es %}
-      <section class="translation-card" lang="es" data-lang="es">
+      <div class="translation-card" lang="es" data-lang="es">
         <div class="content-block">
           {{ page.content_es | markdownify }}
         </div>
-      </section>
+      </div>
     {% endif %}
   {% endif %}
 
