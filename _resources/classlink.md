@@ -7,7 +7,7 @@ category: Parent Resources
 category_es: Recursos para familias
 order: 200
 external_url: https://launchpad.classlink.com/ocps
-last_updated: 2026-07-04
+last_updated: 2026-11-05
 content_en: |
   OCPS LaunchPad, powered by ClassLink, gives students and families access to district apps and learning tools.
 

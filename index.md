@@ -6,7 +6,7 @@ browser_title: Cheney Elementary PTA | Orlando, Florida
 browser_title_es: PTA de Cheney Elementary | Orlando, Florida
 description: Find Cheney Elementary PTA events, parent resources, volunteer opportunities and membership information for families in Orlando, Florida.
 description_es: Encuentre eventos, recursos para familias, oportunidades de voluntariado e información de membresía de Cheney Elementary PTA en Orlando, Florida.
-last_updated: 2026-10-24
+last_updated: 2026-11-05
 sections:
   - name: Events
     name_es: Eventos
@@ -19,17 +19,17 @@ sections:
 {% assign resources = site.resources | sort: "order" %}
 
 <section class="hero" aria-labelledby="welcome-heading">
-  <p class="eyebrow"><span data-lang="en">Families, educators and community</span><span data-lang="es">Familias, educadores y comunidad</span></p>
-  <h1 id="welcome-heading"><span data-lang="en">Welcome to Cheney Elementary PTA<sup>®</sup></span><span data-lang="es">Bienvenidos a Cheney Elementary PTA<sup>®</sup></span></h1>
-  <p data-lang="en">Find useful school resources and simple ways to support every Cheney Elementary student.</p>
-  <p data-lang="es">Encuentre recursos escolares útiles y maneras sencillas de apoyar a cada estudiante de Cheney Elementary.</p>
+  <p class="eyebrow"><span data-lang="en" lang="en">Families, educators and community</span><span data-lang="es" lang="es">Familias, educadores y comunidad</span></p>
+  <h1 id="welcome-heading"><span data-lang="en" lang="en">Welcome to Cheney Elementary PTA<sup>®</sup></span><span data-lang="es" lang="es">Bienvenidos a Cheney Elementary PTA<sup>®</sup></span></h1>
+  <p data-lang="en" lang="en">Find useful school resources and simple ways to support every Cheney Elementary student.</p>
+  <p data-lang="es" lang="es">Encuentre recursos escolares útiles y maneras sencillas de apoyar a cada estudiante de Cheney Elementary.</p>
 </section>
 
 {% for section in page.sections %}
   <section class="resource-section">
     <h2>
-      <span data-lang="en">{{ section.name }}</span>
-      <span data-lang="es">{{ section.name_es | default: section.name }}</span>
+      <span data-lang="en" lang="en">{{ section.name }}</span>
+      <span data-lang="es" lang="es">{{ section.name_es | default: section.name }}</span>
     </h2>
     <ul class="resource-list" aria-label="{{ section.name }}" data-aria-label-en="{{ section.name }}" data-aria-label-es="{{ section.name_es | default: section.name }}">
       {% for resource in resources %}
@@ -42,10 +42,10 @@ sections:
           {% endif %}
           <li>
             <a class="resource-card" href="{{ resource_href }}">
-              <strong data-lang="en">{{ resource.title }}</strong>
-              <strong data-lang="es">{{ resource.title_es | default: resource.title }}</strong>
-              {% if resource.description %}<small data-lang="en">{{ resource.description }}</small>{% endif %}
-              {% if resource.description_es %}<small data-lang="es">{{ resource.description_es }}</small>{% endif %}
+              <strong data-lang="en" lang="en">{{ resource.title }}</strong>
+              <strong data-lang="es" lang="es">{{ resource.title_es | default: resource.title }}</strong>
+              {% if resource.description %}<small data-lang="en" lang="en">{{ resource.description }}</small>{% endif %}
+              {% if resource.description_es %}<small data-lang="es" lang="es">{{ resource.description_es }}</small>{% endif %}
             </a>
           </li>
         {% endif %}

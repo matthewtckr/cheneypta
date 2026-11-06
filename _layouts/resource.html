@@ -3,23 +3,23 @@ layout: default
 ---
 
 <article class="resource-page">
-  <p class="back-link"><a href="{{ '/' | relative_url }}"><span data-lang="en">Back to parent resources</span><span data-lang="es">Volver a recursos para familias</span></a></p>
+  <p class="back-link"><a href="{{ '/' | relative_url }}"><span data-lang="en" lang="en">Back to parent resources</span><span data-lang="es" lang="es">Volver a recursos para familias</span></a></p>
 
   <header class="resource-header">
-    <p class="eyebrow"><span data-lang="en">{{ page.category }}</span><span data-lang="es">{{ page.category_es | default: page.category }}</span></p>
-    <h1 data-lang="en">{{ page.title }}</h1>
-    <h1 data-lang="es">{{ page.title_es | default: page.title }}</h1>
-    {% if page.description %}<p data-lang="en">{{ page.description }}</p>{% endif %}
-    {% if page.description_es %}<p data-lang="es">{{ page.description_es }}</p>{% endif %}
+    <p class="eyebrow"><span data-lang="en" lang="en">{{ page.category }}</span><span data-lang="es" lang="es">{{ page.category_es | default: page.category }}</span></p>
+    <h1 data-lang="en" lang="en">{{ page.title }}</h1>
+    <h1 data-lang="es" lang="es">{{ page.title_es | default: page.title }}</h1>
+    {% if page.description %}<p data-lang="en" lang="en">{{ page.description }}</p>{% endif %}
+    {% if page.description_es %}<p data-lang="es" lang="es">{{ page.description_es }}</p>{% endif %}
   </header>
 
   {% assign external_url = page.external_url | strip %}
   {% if external_url != "" %}
-    <p><a class="primary-button" href="{{ external_url }}"><span data-lang="en">Open resource</span><span data-lang="es">Abrir recurso</span></a></p>
+    <p><a class="primary-button" href="{{ external_url }}"><span data-lang="en" lang="en">Open resource</span><span data-lang="es" lang="es">Abrir recurso</span></a></p>
   {% endif %}
 
   {% if page.supply_lists %}
-    <div class="translation-card" data-lang="en">
+    <div class="translation-card" data-lang="en" lang="en">
       <div class="content-block">
         {% include supply-lists.html language="en" %}
       </div>
@@ -30,7 +30,7 @@ layout: default
       </div>
     </div>
   {% else %}
-    <div class="translation-card" data-lang="en">
+    <div class="translation-card" data-lang="en" lang="en">
       <div class="content-block">
         {{ page.content_en | markdownify }}
       </div>
@@ -46,6 +46,6 @@ layout: default
   {% endif %}
 
   {% if page.last_updated %}
-    <p class="last-updated"><span data-lang="en">Last updated:</span><span data-lang="es">Última actualización:</span> {{ page.last_updated }}</p>
+    <p class="last-updated"><span data-lang="en" lang="en">Last updated:</span><span data-lang="es" lang="es">Última actualización:</span> {{ page.last_updated }}</p>
   {% endif %}
 </article>

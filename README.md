@@ -91,6 +91,8 @@ Maintain English and Spanish content together in each resource file:
 
 The site checks the visitor's browser language list and shows Spanish automatically when any listed language starts with `es`. Visitors can also switch languages manually.
 
+Translated elements and language buttons declare matching `lang="en"` or `lang="es"` attributes. Resource content and supply-list includes inherit their language from the translation wrapper; avoid redundant or conflicting language declarations inside those blocks.
+
 The language switch also updates the document language, page title, selected-language state, navigation labels, home-link label, language-selector label, and logo alternative text so assistive technologies use the correct language.
 
 Manual language choices are saved in `localStorage` only when the selected language differs from the browser preference. When a visitor changes back to the browser-preferred language, the saved language preference is removed.
