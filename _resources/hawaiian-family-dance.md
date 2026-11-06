@@ -7,7 +7,7 @@ category: Events
 category_es: Eventos
 order: 53
 external_url: ""
-last_updated: 2026-08-23
+last_updated: 2026-11-05
 content_en: |
   The Hawaiian Family Dance will be held on April 23, 2027, from 6–8 p.m.
 

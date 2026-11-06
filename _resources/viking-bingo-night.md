@@ -7,7 +7,7 @@ category: Events
 category_es: Eventos
 order: 52
 external_url: ""
-last_updated: 2026-08-23
+last_updated: 2026-11-05
 content_en: |
   Viking Bingo Night will be held on January 15, 2027.
 

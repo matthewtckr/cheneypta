@@ -7,7 +7,7 @@ category: Events
 category_es: Eventos
 order: 54
 external_url: ""
-last_updated: 2026-08-23
+last_updated: 2026-11-05
 content_en: |
   The Spring Picnic date will be announced soon.
 

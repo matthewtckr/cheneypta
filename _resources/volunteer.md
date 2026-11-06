@@ -7,7 +7,7 @@ category: PTA
 category_es: PTA
 order: 60
 external_url: https://foundationforocps.org/additionsvolunteers/
-last_updated: 2026-07-04
+last_updated: 2026-11-05
 content_en: |
   Volunteers help make PTA events and school support possible.
 

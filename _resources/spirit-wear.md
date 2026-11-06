@@ -7,7 +7,7 @@ category: Parent Resources
 category_es: Recursos para familias
 order: 110
 external_url: https://cheneypta.givebacks.com/shop
-last_updated: 2026-07-04
+last_updated: 2026-11-05
 content_en: |
   Visit the Cheney Store for spirit wear and PTA items.
 

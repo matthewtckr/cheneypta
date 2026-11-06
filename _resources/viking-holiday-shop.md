@@ -7,7 +7,7 @@ category: Events
 category_es: Eventos
 order: 51
 external_url: ""
-last_updated: 2026-08-23
+last_updated: 2026-11-05
 content_en: |
   The Viking Holiday Shop will be open December 9–15, 2026 during school hours.
 

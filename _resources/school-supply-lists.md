@@ -8,7 +8,7 @@ category_es: Recursos para familias
 order: 100
 external_url: ""
 supply_lists: true
-last_updated: 2026-08-22
+last_updated: 2026-11-05
 content_en: |
   School supply lists by grade with links to the original flyers.
 content_es: |

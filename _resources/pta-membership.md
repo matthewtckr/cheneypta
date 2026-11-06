@@ -7,7 +7,7 @@ category: PTA
 category_es: PTA
 order: 40
 external_url: https://cheneypta.givebacks.com/shop?category=16376
-last_updated: 2026-10-06
+last_updated: 2026-11-05
 content_en: |
   Join Cheney Elementary PTA for just $6 to support student programs, teacher appreciation and family events.
 
